@@ -1,0 +1,5244 @@
+{
+  "schemaVersion": 3,
+  "root": "E:\\Downloads\\neko-armor",
+  "generatedAt": 1792801040601,
+  "files": [
+    {
+      "path": "client.js",
+      "lang": "javascript",
+      "mtimeMs": 1792801040379.2925,
+      "symbols": [
+        {
+          "name": "NekoDock",
+          "kind": "function",
+          "line": 64,
+          "endLine": 138,
+          "exported": false,
+          "signature": "NekoDock(props)",
+          "file": "client.js",
+          "id": "sym:v1:client.js#function:NekoDock@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "NekoFreeSection",
+          "kind": "function",
+          "line": 275,
+          "endLine": 361,
+          "exported": false,
+          "signature": "NekoFreeSection(props)",
+          "file": "client.js",
+          "id": "sym:v1:client.js#function:NekoFreeSection@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "list",
+          "kind": "function",
+          "line": 297,
+          "endLine": 303,
+          "exported": false,
+          "signature": "list(items)",
+          "file": "client.js",
+          "id": "sym:v1:client.js#function:NekoFreeSection@1/function:list@1",
+          "scope": [
+            {
+              "kind": "function",
+              "name": "NekoFreeSection",
+              "ordinal": 1
+            }
+          ],
+          "ordinal": 1
+        },
+        {
+          "name": "apply",
+          "kind": "function",
+          "line": 363,
+          "endLine": 395,
+          "exported": false,
+          "signature": "apply(ctx)",
+          "file": "client.js",
+          "id": "sym:v1:client.js#function:apply@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [],
+      "importDetails": [],
+      "calls": [
+        {
+          "name": "load",
+          "line": 4,
+          "from": "",
+          "fromId": null,
+          "qualifier": "window.__ModuleLoader__"
+        },
+        {
+          "name": "defineProperty",
+          "line": 9,
+          "from": "",
+          "fromId": null,
+          "qualifier": "Object"
+        },
+        {
+          "name": "require",
+          "line": 11,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "useProjection",
+          "line": 67,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": null
+        },
+        {
+          "name": "useRef",
+          "line": 70,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "useRef",
+          "line": 71,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "useState",
+          "line": 72,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "useEffect",
+          "line": 75,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "getElementById",
+          "line": 77,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "document"
+        },
+        {
+          "name": "createElement",
+          "line": 78,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "document"
+        },
+        {
+          "name": "appendChild",
+          "line": 81,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "document.head"
+        },
+        {
+          "name": "remove",
+          "line": 83,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "styleEl"
+        },
+        {
+          "name": "useEffect",
+          "line": 86,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "now",
+          "line": 90,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Date"
+        },
+        {
+          "name": "now",
+          "line": 91,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Date"
+        },
+        {
+          "name": "setTick",
+          "line": 91,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": null
+        },
+        {
+          "name": "isArray",
+          "line": 96,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "now",
+          "line": 99,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Date"
+        },
+        {
+          "name": "assign",
+          "line": 102,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "assign",
+          "line": 103,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "createElement",
+          "line": 122,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "createElement",
+          "line": 125,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "createElement",
+          "line": 134,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "createElement",
+          "line": 135,
+          "from": "NekoDock",
+          "fromId": "sym:v1:client.js#function:NekoDock@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "useState",
+          "line": 280,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "useState",
+          "line": 284,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "useEffect",
+          "line": 288,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "fetch",
+          "line": 290,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "json",
+          "line": 291,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "then",
+          "line": 291,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "fetch(\"/api/neko-armor/info\", { headers: { Accept: \"application/json\" } })"
+        },
+        {
+          "name": "setInfo",
+          "line": 292,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "then",
+          "line": 292,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "fetch(\"/api/neko-armor/info\", { headers: { Accept: \"application/json\" } }) .then(function (res) { return res.json(); })"
+        },
+        {
+          "name": "catch",
+          "line": 293,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "fetch(\"/api/neko-armor/info\", { headers: { Accept: \"application/json\" } }) .then(function (res) { return res.json(); }) .then(function (data) { if (alive && data && data.ok) setInfo(data); })"
+        },
+        {
+          "name": "createElement",
+          "line": 298,
+          "from": "list",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1/function:list@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "map",
+          "line": 299,
+          "from": "list",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1/function:list@1",
+          "qualifier": "items"
+        },
+        {
+          "name": "createElement",
+          "line": 300,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1/function:list@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "createElement",
+          "line": 309,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "push",
+          "line": 309,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "children"
+        },
+        {
+          "name": "push",
+          "line": 313,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "children"
+        },
+        {
+          "name": "createElement",
+          "line": 314,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 314,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 315,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 315,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 317,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 317,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 318,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "list",
+          "line": 318,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "t",
+          "line": 318,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 320,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 320,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 321,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "list",
+          "line": 321,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "t",
+          "line": 321,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 323,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "setExpanded",
+          "line": 327,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "t",
+          "line": 328,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 332,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "push",
+          "line": 332,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "children"
+        },
+        {
+          "name": "createElement",
+          "line": 333,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 335,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 336,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "map",
+          "line": 338,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "t(\"howSteps\")"
+        },
+        {
+          "name": "t",
+          "line": 338,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 339,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "createElement",
+          "line": 341,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "t",
+          "line": 356,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": null
+        },
+        {
+          "name": "createElement",
+          "line": 360,
+          "from": "NekoFreeSection",
+          "fromId": "sym:v1:client.js#function:NekoFreeSection@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "inject",
+          "line": 364,
+          "from": "apply",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.slots"
+        },
+        {
+          "name": "register",
+          "line": 365,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.slots"
+        },
+        {
+          "name": "bind",
+          "line": 374,
+          "from": "apply",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.locale"
+        },
+        {
+          "name": "effect",
+          "line": 375,
+          "from": "apply",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "register",
+          "line": 376,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.locale"
+        },
+        {
+          "name": "effect",
+          "line": 379,
+          "from": "apply",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "inject",
+          "line": 380,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.slots"
+        },
+        {
+          "name": "register",
+          "line": 381,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "ctx.slots"
+        },
+        {
+          "name": "t",
+          "line": 385,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": null
+        },
+        {
+          "name": "assign",
+          "line": 388,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "createElement",
+          "line": 388,
+          "from": "",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "react"
+        },
+        {
+          "name": "warn",
+          "line": 393,
+          "from": "apply",
+          "fromId": "sym:v1:client.js#function:apply@1",
+          "qualifier": "console"
+        },
+        {
+          "name": "warn",
+          "line": 404,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "index.js",
+      "lang": "javascript",
+      "mtimeMs": 1792799931257.0498,
+      "symbols": [
+        {
+          "name": "PROMPT_URL",
+          "kind": "variable",
+          "line": 9,
+          "endLine": 9,
+          "exported": false,
+          "signature": "PROMPT_URL",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PROMPT_URL@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PROMPT_TEXT",
+          "kind": "variable",
+          "line": 10,
+          "endLine": 12,
+          "exported": false,
+          "signature": "PROMPT_TEXT",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PROMPT_TEXT@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "SELF_URL",
+          "kind": "variable",
+          "line": 14,
+          "endLine": 14,
+          "exported": false,
+          "signature": "SELF_URL",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:SELF_URL@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PLUGIN_ID",
+          "kind": "variable",
+          "line": 16,
+          "endLine": 16,
+          "exported": false,
+          "signature": "PLUGIN_ID",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PLUGIN_ID@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PLUGIN_NAME",
+          "kind": "variable",
+          "line": 17,
+          "endLine": 17,
+          "exported": false,
+          "signature": "PLUGIN_NAME",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PLUGIN_NAME@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PLUGIN_VERSION",
+          "kind": "variable",
+          "line": 18,
+          "endLine": 18,
+          "exported": false,
+          "signature": "PLUGIN_VERSION",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PLUGIN_VERSION@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PLUGIN_AUTHOR",
+          "kind": "variable",
+          "line": 19,
+          "endLine": 19,
+          "exported": false,
+          "signature": "PLUGIN_AUTHOR",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:PLUGIN_AUTHOR@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "EDITION",
+          "kind": "variable",
+          "line": 20,
+          "endLine": 20,
+          "exported": false,
+          "signature": "EDITION",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:EDITION@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "findInstaller",
+          "kind": "function",
+          "line": 26,
+          "endLine": 41,
+          "exported": false,
+          "signature": "findInstaller()",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:findInstaller@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "checkUpdate",
+          "kind": "function",
+          "line": 44,
+          "endLine": 70,
+          "exported": false,
+          "signature": "checkUpdate()",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:checkUpdate@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "objectOutput",
+          "kind": "variable",
+          "line": 72,
+          "endLine": 75,
+          "exported": false,
+          "signature": "objectOutput",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:objectOutput@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "profileTool",
+          "kind": "variable",
+          "line": 77,
+          "endLine": 96,
+          "exported": false,
+          "signature": "profileTool",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:profileTool@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "execute",
+          "kind": "method",
+          "line": 82,
+          "endLine": 95,
+          "exported": false,
+          "signature": "execute()",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:profileTool@1/method:execute@1",
+          "scope": [
+            {
+              "kind": "owner",
+              "name": "profileTool",
+              "ordinal": 1
+            }
+          ],
+          "ordinal": 1
+        },
+        {
+          "name": "OPENING_WINDOW",
+          "kind": "variable",
+          "line": 99,
+          "endLine": 99,
+          "exported": false,
+          "signature": "OPENING_WINDOW",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:OPENING_WINDOW@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "REFUSAL_MARKERS_ZH",
+          "kind": "variable",
+          "line": 100,
+          "endLine": 107,
+          "exported": false,
+          "signature": "REFUSAL_MARKERS_ZH",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:REFUSAL_MARKERS_ZH@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "REFUSAL_RE_EN",
+          "kind": "variable",
+          "line": 108,
+          "endLine": 109,
+          "exported": false,
+          "signature": "REFUSAL_RE_EN",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:REFUSAL_RE_EN@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "NON_REFUSAL_TAIL",
+          "kind": "variable",
+          "line": 110,
+          "endLine": 110,
+          "exported": false,
+          "signature": "NON_REFUSAL_TAIL",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:NON_REFUSAL_TAIL@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "RISK_MARKERS",
+          "kind": "variable",
+          "line": 111,
+          "endLine": 116,
+          "exported": false,
+          "signature": "RISK_MARKERS",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:RISK_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "DOMAIN_MARKERS",
+          "kind": "variable",
+          "line": 117,
+          "endLine": 122,
+          "exported": false,
+          "signature": "DOMAIN_MARKERS",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:DOMAIN_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "armorTextOf",
+          "kind": "function",
+          "line": 124,
+          "endLine": 127,
+          "exported": false,
+          "signature": "armorTextOf(content)",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:armorTextOf@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "matchedIn",
+          "kind": "function",
+          "line": 129,
+          "endLine": 144,
+          "exported": false,
+          "signature": "matchedIn(text, markers)",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:matchedIn@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "armorScore",
+          "kind": "function",
+          "line": 146,
+          "endLine": 169,
+          "exported": false,
+          "signature": "armorScore(text)",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:armorScore@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "armorProjectionApply",
+          "kind": "function",
+          "line": 171,
+          "endLine": 191,
+          "exported": false,
+          "signature": "armorProjectionApply(state, event)",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:armorProjectionApply@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "name",
+          "kind": "variable",
+          "line": 193,
+          "endLine": 193,
+          "exported": true,
+          "signature": "name",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:name@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "inject",
+          "kind": "variable",
+          "line": 194,
+          "endLine": 194,
+          "exported": true,
+          "signature": "inject",
+          "file": "index.js",
+          "id": "sym:v1:index.js#owner:inject@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "apply",
+          "kind": "function",
+          "line": 196,
+          "endLine": 255,
+          "exported": true,
+          "signature": "apply(ctx)",
+          "file": "index.js",
+          "id": "sym:v1:index.js#function:apply@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "node:fs",
+        "node:os",
+        "node:path"
+      ],
+      "importDetails": [
+        {
+          "specifier": "node:fs",
+          "line": 1,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "readFileSync",
+              "local": "readFileSync",
+              "kind": "named"
+            },
+            {
+              "imported": "existsSync",
+              "local": "existsSync",
+              "kind": "named"
+            },
+            {
+              "imported": "statSync",
+              "local": "statSync",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:os",
+          "line": 2,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "homedir",
+              "local": "homedir",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:path",
+          "line": 3,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "join",
+              "local": "join",
+              "kind": "named"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "URL",
+          "line": 9,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "readFileSync",
+          "line": 10,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "replace",
+          "line": 12,
+          "from": "",
+          "fromId": null,
+          "qualifier": "readFileSync(PROMPT_URL, \"utf8\")"
+        },
+        {
+          "name": "URL",
+          "line": 14,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "homedir",
+          "line": 27,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 29,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 30,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 31,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 32,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 33,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "existsSync",
+          "line": 37,
+          "from": "findInstaller",
+          "fromId": "sym:v1:index.js#function:findInstaller@1",
+          "qualifier": null
+        },
+        {
+          "name": "replace",
+          "line": 46,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": "SELF_URL.pathname"
+        },
+        {
+          "name": "statSync",
+          "line": 47,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "findInstaller",
+          "line": 48,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "statSync",
+          "line": 54,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "Date",
+          "line": 63,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "toISOString",
+          "line": 63,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": "new Date(exeTime)"
+        },
+        {
+          "name": "Date",
+          "line": 64,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "toISOString",
+          "line": 64,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": "new Date(selfTime)"
+        },
+        {
+          "name": "String",
+          "line": 68,
+          "from": "checkUpdate",
+          "fromId": "sym:v1:index.js#function:checkUpdate@1",
+          "qualifier": null
+        },
+        {
+          "name": "stringify",
+          "line": 74,
+          "from": "",
+          "fromId": "sym:v1:index.js#owner:objectOutput@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "byteLength",
+          "line": 90,
+          "from": "execute",
+          "fromId": "sym:v1:index.js#owner:profileTool@1/method:execute@1",
+          "qualifier": "Buffer"
+        },
+        {
+          "name": "isArray",
+          "line": 125,
+          "from": "armorTextOf",
+          "fromId": "sym:v1:index.js#function:armorTextOf@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "join",
+          "line": 126,
+          "from": "armorTextOf",
+          "fromId": "sym:v1:index.js#function:armorTextOf@1",
+          "qualifier": "content.map((block) => (block && block.type === \"text\" ? block.text : \"\"))"
+        },
+        {
+          "name": "map",
+          "line": 126,
+          "from": "armorTextOf",
+          "fromId": "sym:v1:index.js#function:armorTextOf@1",
+          "qualifier": "content"
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "line": 130,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "line": 133,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "m"
+        },
+        {
+          "name": "indexOf",
+          "line": 136,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "slice",
+          "line": 138,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "includes",
+          "line": 139,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "tail"
+        },
+        {
+          "name": "push",
+          "line": 139,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "found"
+        },
+        {
+          "name": "some",
+          "line": 139,
+          "from": "matchedIn",
+          "fromId": "sym:v1:index.js#function:matchedIn@1",
+          "qualifier": "NON_REFUSAL_TAIL"
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "line": 147,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "slice",
+          "line": 148,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "matchedIn",
+          "line": 149,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": null
+        },
+        {
+          "name": "match",
+          "line": 150,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "window"
+        },
+        {
+          "name": "slice",
+          "line": 150,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "(window.match(REFUSAL_RE_EN) || [])"
+        },
+        {
+          "name": "concat",
+          "line": 151,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "refusalZh"
+        },
+        {
+          "name": "matchedIn",
+          "line": 152,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": null
+        },
+        {
+          "name": "slice",
+          "line": 153,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "refusal"
+        },
+        {
+          "name": "entries",
+          "line": 160,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "matchedIn",
+          "line": 161,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": null
+        },
+        {
+          "name": "slice",
+          "line": 168,
+          "from": "armorScore",
+          "fromId": "sym:v1:index.js#function:armorScore@1",
+          "qualifier": "risk"
+        },
+        {
+          "name": "armorTextOf",
+          "line": 177,
+          "from": "armorProjectionApply",
+          "fromId": "sym:v1:index.js#function:armorProjectionApply@1",
+          "qualifier": null
+        },
+        {
+          "name": "trim",
+          "line": 178,
+          "from": "armorProjectionApply",
+          "fromId": "sym:v1:index.js#function:armorProjectionApply@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "armorScore",
+          "line": 179,
+          "from": "armorProjectionApply",
+          "fromId": "sym:v1:index.js#function:armorProjectionApply@1",
+          "qualifier": null
+        },
+        {
+          "name": "effect",
+          "line": 197,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "section",
+          "line": 198,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx.systemPrompt"
+        },
+        {
+          "name": "effect",
+          "line": 204,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "register",
+          "line": 205,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx.tools"
+        },
+        {
+          "name": "inject",
+          "line": 209,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "get",
+          "line": 210,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "sctx"
+        },
+        {
+          "name": "setHeader",
+          "line": 218,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "setHeader",
+          "line": 219,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "checkUpdate",
+          "line": 220,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": null
+        },
+        {
+          "name": "end",
+          "line": 220,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "stringify",
+          "line": 220,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "effect",
+          "line": 224,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "sctx"
+        },
+        {
+          "name": "register",
+          "line": 224,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "server"
+        },
+        {
+          "name": "effect",
+          "line": 242,
+          "from": "registerArmor",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "register",
+          "line": 242,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "p"
+        },
+        {
+          "name": "get",
+          "line": 246,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "registerArmor",
+          "line": 248,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": null
+        },
+        {
+          "name": "inject",
+          "line": 250,
+          "from": "apply",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "ctx"
+        },
+        {
+          "name": "get",
+          "line": 251,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": "innerCtx"
+        },
+        {
+          "name": "registerArmor",
+          "line": 252,
+          "from": "",
+          "fromId": "sym:v1:index.js#function:apply@1",
+          "qualifier": null
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/lib/migrate.js",
+      "lang": "javascript",
+      "mtimeMs": 1792584900721.6565,
+      "symbols": [
+        {
+          "name": "legacyPluginIds",
+          "kind": "variable",
+          "line": 5,
+          "endLine": 17,
+          "exported": true,
+          "signature": "legacyPluginIds",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#owner:legacyPluginIds@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "scalarValue",
+          "kind": "function",
+          "line": 19,
+          "endLine": 32,
+          "exported": false,
+          "signature": "scalarValue(text)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "describeLines",
+          "kind": "function",
+          "line": 34,
+          "endLine": 48,
+          "exported": false,
+          "signature": "describeLines(text)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "nodeEnd",
+          "kind": "function",
+          "line": 50,
+          "endLine": 61,
+          "exported": false,
+          "signature": "nodeEnd(lines, start)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:nodeEnd@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "mountLines",
+          "kind": "function",
+          "line": 63,
+          "endLine": 88,
+          "exported": false,
+          "signature": "mountLines(lines)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "stripPluginMounts",
+          "kind": "function",
+          "line": 91,
+          "endLine": 135,
+          "exported": true,
+          "signature": "stripPluginMounts(yamlText, ids = legacyPluginIds)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "readPackage",
+          "kind": "function",
+          "line": 137,
+          "endLine": 142,
+          "exported": false,
+          "signature": "readPackage(profileDir)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "isDshProfile",
+          "kind": "function",
+          "line": 144,
+          "endLine": 149,
+          "exported": true,
+          "signature": "isDshProfile(profileDir)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:isDshProfile@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "writeBackedUp",
+          "kind": "function",
+          "line": 151,
+          "endLine": 158,
+          "exported": false,
+          "signature": "writeBackedUp(file, text)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:writeBackedUp@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "migrateYaml",
+          "kind": "function",
+          "line": 160,
+          "endLine": 165,
+          "exported": false,
+          "signature": "migrateYaml(file, ids)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateYaml@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "referenceId",
+          "kind": "function",
+          "line": 167,
+          "endLine": 171,
+          "exported": false,
+          "signature": "referenceId(value)",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:referenceId@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "migrateProfile",
+          "kind": "function",
+          "line": 173,
+          "endLine": 228,
+          "exported": true,
+          "signature": "migrateProfile(profileDir, { pluginsDir, targetId = \"neko-armor\" } = {})",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "migrateDshHome",
+          "kind": "function",
+          "line": 230,
+          "endLine": 249,
+          "exported": true,
+          "signature": "migrateDshHome(dshHome, selectedProfiles = [])",
+          "file": "scripts/lib/migrate.js",
+          "id": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "node:fs",
+        "node:path",
+        "node:url"
+      ],
+      "importDetails": [
+        {
+          "specifier": "node:fs",
+          "line": 1,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "fs",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:path",
+          "line": 2,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "path",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:url",
+          "line": 3,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "fileURLToPath",
+              "local": "fileURLToPath",
+              "kind": "named"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "freeze",
+          "line": 5,
+          "from": "",
+          "fromId": null,
+          "qualifier": "Object"
+        },
+        {
+          "name": "trim",
+          "line": 20,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "startsWith",
+          "line": 21,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "value"
+        },
+        {
+          "name": "exec",
+          "line": 22,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "/^\"((?:[^\"\\\\]|\\\\.)*)\"\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "parse",
+          "line": 24,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "startsWith",
+          "line": 26,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "value"
+        },
+        {
+          "name": "exec",
+          "line": 27,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "/^'((?:[^']|'')*)'\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "replace",
+          "line": 28,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "match[1]"
+        },
+        {
+          "name": "exec",
+          "line": 30,
+          "from": "scalarValue",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:scalarValue@1",
+          "qualifier": "/^([^\\s#\\[\\]{},&*!]+)\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "match",
+          "line": 36,
+          "from": "describeLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "filter",
+          "line": 37,
+          "from": "describeLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "(text.match(/[^\\r\\n]*(?:\\r\\n|\\n|\\r|$)/g) || [])"
+        },
+        {
+          "name": "map",
+          "line": 38,
+          "from": "describeLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "(text.match(/[^\\r\\n]*(?:\\r\\n|\\n|\\r|$)/g) || []) .filter((raw) => raw.length)"
+        },
+        {
+          "name": "replace",
+          "line": 39,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "raw"
+        },
+        {
+          "name": "exec",
+          "line": 40,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "/^ */"
+        },
+        {
+          "name": "test",
+          "line": 41,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "/^\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "test",
+          "line": 45,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:describeLines@1",
+          "qualifier": "/:\\s*[>|][+-]?[1-9]?\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "flatMap",
+          "line": 64,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "lines"
+        },
+        {
+          "name": "test",
+          "line": 65,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "/^ *-\\s/"
+        },
+        {
+          "name": "Set",
+          "line": 66,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": null
+        },
+        {
+          "name": "map",
+          "line": 67,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "sequenceLines"
+        },
+        {
+          "name": "min",
+          "line": 67,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "Math"
+        },
+        {
+          "name": "filter",
+          "line": 68,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "sequenceLines"
+        },
+        {
+          "name": "Set",
+          "line": 69,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": null
+        },
+        {
+          "name": "nodeEnd",
+          "line": 71,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": null
+        },
+        {
+          "name": "test",
+          "line": 75,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "/^ *-\\s+insert:\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "test",
+          "line": 76,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "/^ *insert:\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "nodeEnd",
+          "line": 78,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": null
+        },
+        {
+          "name": "filter",
+          "line": 79,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "sequenceLines"
+        },
+        {
+          "name": "map",
+          "line": 81,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "children"
+        },
+        {
+          "name": "min",
+          "line": 81,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "Math"
+        },
+        {
+          "name": "add",
+          "line": 83,
+          "from": "mountLines",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:mountLines@1",
+          "qualifier": "mounts"
+        },
+        {
+          "name": "Set",
+          "line": 92,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "describeLines",
+          "line": 94,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "mountLines",
+          "line": 95,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "Set",
+          "line": 96,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "has",
+          "line": 99,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "mounts"
+        },
+        {
+          "name": "exec",
+          "line": 100,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "/^ *-\\s+([^:]+):\\s*(.*)$/"
+        },
+        {
+          "name": "nodeEnd",
+          "line": 102,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "scalarValue",
+          "line": 103,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "trim",
+          "line": 103,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "item[1]"
+        },
+        {
+          "name": "exec",
+          "line": 108,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "/^ *id:\\s*(.*)$/"
+        },
+        {
+          "name": "scalarValue",
+          "line": 109,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "has",
+          "line": 112,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "targets"
+        },
+        {
+          "name": "add",
+          "line": 113,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "remove"
+        },
+        {
+          "name": "filter",
+          "line": 116,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "lines"
+        },
+        {
+          "name": "has",
+          "line": 116,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "remove"
+        },
+        {
+          "name": "Set",
+          "line": 118,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "test",
+          "line": 121,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "/^ *-\\s+insert:\\s*(?:#.*)?$/"
+        },
+        {
+          "name": "nodeEnd",
+          "line": 122,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "indexOf",
+          "line": 124,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "lines"
+        },
+        {
+          "name": "nodeEnd",
+          "line": 125,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": null
+        },
+        {
+          "name": "some",
+          "line": 125,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "[...remove]"
+        },
+        {
+          "name": "filter",
+          "line": 126,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "retained.slice(start + 1, end)"
+        },
+        {
+          "name": "slice",
+          "line": 126,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "retained"
+        },
+        {
+          "name": "add",
+          "line": 128,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "emptyInsert"
+        },
+        {
+          "name": "some",
+          "line": 129,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "children"
+        },
+        {
+          "name": "test",
+          "line": 129,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "/^ *-\\s/"
+        },
+        {
+          "name": "replace",
+          "line": 131,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "line.raw"
+        },
+        {
+          "name": "filter",
+          "line": 134,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "retained"
+        },
+        {
+          "name": "has",
+          "line": 134,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "emptyInsert"
+        },
+        {
+          "name": "join",
+          "line": 134,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "retained.filter((_, index) => !emptyInsert.has(index)).map((line) => line.raw)"
+        },
+        {
+          "name": "map",
+          "line": 134,
+          "from": "stripPluginMounts",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:stripPluginMounts@1",
+          "qualifier": "retained.filter((_, index) => !emptyInsert.has(index))"
+        },
+        {
+          "name": "join",
+          "line": 138,
+          "from": "readPackage",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 139,
+          "from": "readPackage",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readFileSync",
+          "line": 140,
+          "from": "readPackage",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "parse",
+          "line": 141,
+          "from": "readPackage",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "replace",
+          "line": 141,
+          "from": "readPackage",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:readPackage@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "readPackage",
+          "line": 146,
+          "from": "isDshProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:isDshProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "Boolean",
+          "line": 147,
+          "from": "isDshProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:isDshProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "isArray",
+          "line": 147,
+          "from": "isDshProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:isDshProfile@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "copyFileSync",
+          "line": 153,
+          "from": "writeBackedUp",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:writeBackedUp@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "existsSync",
+          "line": 153,
+          "from": "writeBackedUp",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:writeBackedUp@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "writeFileSync",
+          "line": 155,
+          "from": "writeBackedUp",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:writeBackedUp@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "renameSync",
+          "line": 156,
+          "from": "writeBackedUp",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:writeBackedUp@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "existsSync",
+          "line": 161,
+          "from": "migrateYaml",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateYaml@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readFileSync",
+          "line": 162,
+          "from": "migrateYaml",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateYaml@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "stripPluginMounts",
+          "line": 163,
+          "from": "migrateYaml",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateYaml@1",
+          "qualifier": null
+        },
+        {
+          "name": "writeBackedUp",
+          "line": 164,
+          "from": "migrateYaml",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateYaml@1",
+          "qualifier": null
+        },
+        {
+          "name": "readPackage",
+          "line": 174,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "Set",
+          "line": 176,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "Set",
+          "line": 177,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "add",
+          "line": 179,
+          "from": "mark",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "removedIds"
+        },
+        {
+          "name": "isArray",
+          "line": 182,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "entries",
+          "line": 183,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "has",
+          "line": 184,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "ids"
+        },
+        {
+          "name": "startsWith",
+          "line": 185,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "value"
+        },
+        {
+          "name": "resolve",
+          "line": 186,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "slice",
+          "line": 186,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "value"
+        },
+        {
+          "name": "find",
+          "line": 187,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "legacyPluginIds"
+        },
+        {
+          "name": "resolve",
+          "line": 187,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "mark",
+          "line": 189,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "isArray",
+          "line": 194,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "filter",
+          "line": 196,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "profile.bundles"
+        },
+        {
+          "name": "referenceId",
+          "line": 197,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "has",
+          "line": 198,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "ids"
+        },
+        {
+          "name": "mark",
+          "line": 199,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "isArray",
+          "line": 203,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "Array"
+        },
+        {
+          "name": "filter",
+          "line": 204,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "profile.plugins"
+        },
+        {
+          "name": "referenceId",
+          "line": 205,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "has",
+          "line": 206,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "ids"
+        },
+        {
+          "name": "mark",
+          "line": 207,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "hasOwn",
+          "line": 212,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "mark",
+          "line": 214,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "exec",
+          "line": 220,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "/^([\\t ]+)\"/m"
+        },
+        {
+          "name": "includes",
+          "line": 221,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "pkg.text"
+        },
+        {
+          "name": "replace",
+          "line": 222,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "JSON.stringify(pkg.value, null, indent)"
+        },
+        {
+          "name": "stringify",
+          "line": 222,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "push",
+          "line": 223,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "files"
+        },
+        {
+          "name": "writeBackedUp",
+          "line": 223,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 225,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "migrateYaml",
+          "line": 225,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 226,
+          "from": "migrateProfile",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateProfile@1",
+          "qualifier": "files"
+        },
+        {
+          "name": "resolve",
+          "line": 231,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "join",
+          "line": 232,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 233,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readdirSync",
+          "line": 233,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "map",
+          "line": 234,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "selectedProfiles"
+        },
+        {
+          "name": "resolve",
+          "line": 234,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "Set",
+          "line": 234,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 238,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "has",
+          "line": 239,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "selected"
+        },
+        {
+          "name": "isDirectory",
+          "line": 240,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "fs.statSync(directory)"
+        },
+        {
+          "name": "isDshProfile",
+          "line": 240,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": null
+        },
+        {
+          "name": "statSync",
+          "line": 240,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "join",
+          "line": 241,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "migrateProfile",
+          "line": 241,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 241,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "profiles"
+        },
+        {
+          "name": "join",
+          "line": 244,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "migrateYaml",
+          "line": 245,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 246,
+          "from": "migrateDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fmigrate.js#function:migrateDshHome@1",
+          "qualifier": "extraPatches"
+        },
+        {
+          "name": "fileURLToPath",
+          "line": 251,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "resolve",
+          "line": 251,
+          "from": "",
+          "fromId": null,
+          "qualifier": "path"
+        },
+        {
+          "name": "Error",
+          "line": 254,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "log",
+          "line": 255,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "migrateDshHome",
+          "line": 255,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "stringify",
+          "line": 255,
+          "from": "",
+          "fromId": null,
+          "qualifier": "JSON"
+        },
+        {
+          "name": "error",
+          "line": 257,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/lib/patcher.js",
+      "lang": "javascript",
+      "mtimeMs": 1792584959454.4092,
+      "symbols": [
+        {
+          "name": "isWindows",
+          "kind": "variable",
+          "line": 14,
+          "endLine": 14,
+          "exported": false,
+          "signature": "isWindows",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#owner:isWindows@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "findDshHome",
+          "kind": "function",
+          "line": 16,
+          "endLine": 21,
+          "exported": true,
+          "signature": "findDshHome()",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findDshHome@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "findAiBase",
+          "kind": "function",
+          "line": 23,
+          "endLine": 53,
+          "exported": true,
+          "signature": "findAiBase(dshHome = findDshHome())",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "listBootstrapFiles",
+          "kind": "function",
+          "line": 55,
+          "endLine": 77,
+          "exported": true,
+          "signature": "listBootstrapFiles(dshHome = findDshHome())",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "applyPhase1Patch",
+          "kind": "function",
+          "line": 83,
+          "endLine": 129,
+          "exported": true,
+          "signature": "applyPhase1Patch(dshHome = findDshHome())",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "applyCordisPatch",
+          "kind": "function",
+          "line": 134,
+          "endLine": 165,
+          "exported": true,
+          "signature": "applyCordisPatch(profileDir, pluginName = \"neko-armor\")",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "applyAllPatches",
+          "kind": "function",
+          "line": 170,
+          "endLine": 193,
+          "exported": true,
+          "signature": "applyAllPatches(options = {})",
+          "file": "scripts/lib/patcher.js",
+          "id": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "node:fs",
+        "node:path",
+        "node:os",
+        "node:crypto"
+      ],
+      "importDetails": [
+        {
+          "specifier": "node:fs",
+          "line": 9,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "fs",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:path",
+          "line": 10,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "path",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:os",
+          "line": 11,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "os",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:crypto",
+          "line": 12,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "createHash",
+              "local": "createHash",
+              "kind": "named"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "existsSync",
+          "line": 17,
+          "from": "findDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findDshHome@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "homedir",
+          "line": 20,
+          "from": "findDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findDshHome@1",
+          "qualifier": "os"
+        },
+        {
+          "name": "join",
+          "line": 20,
+          "from": "findDshHome",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findDshHome@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "findDshHome",
+          "line": 23,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": null
+        },
+        {
+          "name": "existsSync",
+          "line": 25,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "push",
+          "line": 26,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "candidates"
+        },
+        {
+          "name": "join",
+          "line": 30,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 31,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readdirSync",
+          "line": 33,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "join",
+          "line": 34,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 34,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "candidates"
+        },
+        {
+          "name": "homedir",
+          "line": 41,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "os"
+        },
+        {
+          "name": "join",
+          "line": 41,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "join",
+          "line": 42,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 42,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "candidates"
+        },
+        {
+          "name": "join",
+          "line": 43,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 43,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "candidates"
+        },
+        {
+          "name": "homedir",
+          "line": 44,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "os"
+        },
+        {
+          "name": "join",
+          "line": 44,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 44,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "candidates"
+        },
+        {
+          "name": "existsSync",
+          "line": 48,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "join",
+          "line": 48,
+          "from": "findAiBase",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:findAiBase@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "findDshHome",
+          "line": 55,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "existsSync",
+          "line": 58,
+          "from": "push",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "includes",
+          "line": 58,
+          "from": "push",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "out"
+        },
+        {
+          "name": "push",
+          "line": 58,
+          "from": "push",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "out"
+        },
+        {
+          "name": "findAiBase",
+          "line": 61,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 63,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 63,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 64,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 64,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 67,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 68,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readdirSync",
+          "line": 70,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "join",
+          "line": 71,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 71,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 72,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "push",
+          "line": 72,
+          "from": "listBootstrapFiles",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:listBootstrapFiles@1",
+          "qualifier": null
+        },
+        {
+          "name": "findDshHome",
+          "line": 83,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": null
+        },
+        {
+          "name": "listBootstrapFiles",
+          "line": 85,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": null
+        },
+        {
+          "name": "readFileSync",
+          "line": 91,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "includes",
+          "line": 92,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "push",
+          "line": 93,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "results"
+        },
+        {
+          "name": "existsSync",
+          "line": 99,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "copyFileSync",
+          "line": 100,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "includes",
+          "line": 108,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "replace",
+          "line": 110,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "push",
+          "line": 114,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "results"
+        },
+        {
+          "name": "writeFileSync",
+          "line": 119,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "push",
+          "line": 120,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "results"
+        },
+        {
+          "name": "push",
+          "line": 122,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "results"
+        },
+        {
+          "name": "push",
+          "line": 125,
+          "from": "applyPhase1Patch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyPhase1Patch@1",
+          "qualifier": "results"
+        },
+        {
+          "name": "join",
+          "line": 135,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 152,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readFileSync",
+          "line": 153,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "includes",
+          "line": 156,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "content"
+        },
+        {
+          "name": "trim",
+          "line": 157,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "content"
+        },
+        {
+          "name": "writeFileSync",
+          "line": 158,
+          "from": "applyCordisPatch",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyCordisPatch@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "findDshHome",
+          "line": 171,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": null
+        },
+        {
+          "name": "applyPhase1Patch",
+          "line": 172,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 174,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 176,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "readdirSync",
+          "line": 178,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "join",
+          "line": 179,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "existsSync",
+          "line": 180,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "isDirectory",
+          "line": 180,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "fs.statSync(pDir)"
+        },
+        {
+          "name": "join",
+          "line": 180,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "path"
+        },
+        {
+          "name": "statSync",
+          "line": 180,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "fs"
+        },
+        {
+          "name": "applyCordisPatch",
+          "line": 181,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 181,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": "cordisResults"
+        },
+        {
+          "name": "findAiBase",
+          "line": 191,
+          "from": "applyAllPatches",
+          "fromId": "sym:v1:scripts%2Flib%2Fpatcher.js#function:applyAllPatches@1",
+          "qualifier": null
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/lib/scorer.mjs",
+      "lang": "javascript",
+      "mtimeMs": 1792584807395.1963,
+      "symbols": [
+        {
+          "name": "OPENING_WINDOW",
+          "kind": "variable",
+          "line": 5,
+          "endLine": 5,
+          "exported": true,
+          "signature": "OPENING_WINDOW",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:OPENING_WINDOW@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "REFUSAL_MARKERS_ZH",
+          "kind": "variable",
+          "line": 7,
+          "endLine": 16,
+          "exported": true,
+          "signature": "REFUSAL_MARKERS_ZH",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:REFUSAL_MARKERS_ZH@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "REFUSAL_RE_EN",
+          "kind": "variable",
+          "line": 18,
+          "endLine": 19,
+          "exported": true,
+          "signature": "REFUSAL_RE_EN",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:REFUSAL_RE_EN@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "FALLBACK_MARKERS",
+          "kind": "variable",
+          "line": 21,
+          "endLine": 28,
+          "exported": true,
+          "signature": "FALLBACK_MARKERS",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:FALLBACK_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "SAFE_MARKERS",
+          "kind": "variable",
+          "line": 30,
+          "endLine": 36,
+          "exported": true,
+          "signature": "SAFE_MARKERS",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:SAFE_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "RISK_MARKERS",
+          "kind": "variable",
+          "line": 38,
+          "endLine": 48,
+          "exported": true,
+          "signature": "RISK_MARKERS",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:RISK_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "NON_REFUSAL_TAIL",
+          "kind": "variable",
+          "line": 50,
+          "endLine": 52,
+          "exported": true,
+          "signature": "NON_REFUSAL_TAIL",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:NON_REFUSAL_TAIL@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "DOMAIN_MARKERS",
+          "kind": "variable",
+          "line": 54,
+          "endLine": 64,
+          "exported": true,
+          "signature": "DOMAIN_MARKERS",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#owner:DOMAIN_MARKERS@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "matchedIn",
+          "kind": "function",
+          "line": 66,
+          "endLine": 81,
+          "exported": false,
+          "signature": "matchedIn(text, markers)",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "scoreResponse",
+          "kind": "function",
+          "line": 83,
+          "endLine": 125,
+          "exported": true,
+          "signature": "scoreResponse(text)",
+          "file": "scripts/lib/scorer.mjs",
+          "id": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [],
+      "importDetails": [],
+      "calls": [
+        {
+          "name": "toLocaleLowerCase",
+          "line": 67,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "text"
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "line": 70,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "m"
+        },
+        {
+          "name": "indexOf",
+          "line": 73,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "slice",
+          "line": 75,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "includes",
+          "line": 76,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "tail"
+        },
+        {
+          "name": "push",
+          "line": 76,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "found"
+        },
+        {
+          "name": "some",
+          "line": 76,
+          "from": "matchedIn",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:matchedIn@1",
+          "qualifier": "NON_REFUSAL_TAIL"
+        },
+        {
+          "name": "String",
+          "line": 84,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "line": 84,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "String(text || \"\")"
+        },
+        {
+          "name": "slice",
+          "line": 85,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "folded"
+        },
+        {
+          "name": "matchedIn",
+          "line": 86,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "match",
+          "line": 87,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "window"
+        },
+        {
+          "name": "slice",
+          "line": 87,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "(window.match(REFUSAL_RE_EN) || [])"
+        },
+        {
+          "name": "concat",
+          "line": 88,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "refusalZh"
+        },
+        {
+          "name": "matchedIn",
+          "line": 89,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "matchedIn",
+          "line": 90,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "matchedIn",
+          "line": 91,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "entries",
+          "line": 99,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "Object"
+        },
+        {
+          "name": "matchedIn",
+          "line": 100,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": null
+        },
+        {
+          "name": "concat",
+          "line": 107,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "refusal"
+        },
+        {
+          "name": "slice",
+          "line": 107,
+          "from": "scoreResponse",
+          "fromId": "sym:v1:scripts%2Flib%2Fscorer.mjs#function:scoreResponse@1",
+          "qualifier": "refusal.concat(fallback)"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/run_bank_live.mjs",
+      "lang": "javascript",
+      "mtimeMs": 1792584879480.611,
+      "symbols": [
+        {
+          "name": "ROOT",
+          "kind": "variable",
+          "line": 10,
+          "endLine": 10,
+          "exported": false,
+          "signature": "ROOT",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:ROOT@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "PROMPT_PATH",
+          "kind": "variable",
+          "line": 11,
+          "endLine": 11,
+          "exported": false,
+          "signature": "PROMPT_PATH",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:PROMPT_PATH@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "BANK_PATH",
+          "kind": "variable",
+          "line": 12,
+          "endLine": 12,
+          "exported": false,
+          "signature": "BANK_PATH",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:BANK_PATH@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "OUT_DIR",
+          "kind": "variable",
+          "line": 13,
+          "endLine": 13,
+          "exported": false,
+          "signature": "OUT_DIR",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:OUT_DIR@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "args",
+          "kind": "variable",
+          "line": 15,
+          "endLine": 15,
+          "exported": false,
+          "signature": "args",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:args@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "flag",
+          "kind": "function",
+          "line": 16,
+          "endLine": 19,
+          "exported": false,
+          "signature": "flag(name, fallback)",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#function:flag@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "levels",
+          "kind": "variable",
+          "line": 20,
+          "endLine": 22,
+          "exported": false,
+          "signature": "levels",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:levels@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "domain",
+          "kind": "variable",
+          "line": 23,
+          "endLine": 23,
+          "exported": false,
+          "signature": "domain",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:domain@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "model",
+          "kind": "variable",
+          "line": 24,
+          "endLine": 24,
+          "exported": false,
+          "signature": "model",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:model@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "apiBase",
+          "kind": "variable",
+          "line": 25,
+          "endLine": 25,
+          "exported": false,
+          "signature": "apiBase",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:apiBase@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "apiKey",
+          "kind": "variable",
+          "line": 26,
+          "endLine": 26,
+          "exported": false,
+          "signature": "apiKey",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:apiKey@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "timeout",
+          "kind": "variable",
+          "line": 27,
+          "endLine": 27,
+          "exported": false,
+          "signature": "timeout",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:timeout@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "delay",
+          "kind": "variable",
+          "line": 28,
+          "endLine": 28,
+          "exported": false,
+          "signature": "delay",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:delay@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "wantsExtended",
+          "kind": "variable",
+          "line": 38,
+          "endLine": 38,
+          "exported": false,
+          "signature": "wantsExtended",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:wantsExtended@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "hasMinimal",
+          "kind": "variable",
+          "line": 39,
+          "endLine": 39,
+          "exported": false,
+          "signature": "hasMinimal",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:hasMinimal@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "systemPrompt",
+          "kind": "variable",
+          "line": 41,
+          "endLine": 41,
+          "exported": false,
+          "signature": "systemPrompt",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:systemPrompt@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "bank",
+          "kind": "variable",
+          "line": 42,
+          "endLine": 46,
+          "exported": false,
+          "signature": "bank",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:bank@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "selected",
+          "kind": "variable",
+          "line": 48,
+          "endLine": 50,
+          "exported": false,
+          "signature": "selected",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:selected@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "callApi",
+          "kind": "function",
+          "line": 56,
+          "endLine": 77,
+          "exported": false,
+          "signature": "callApi(userPrompt)",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "sleep",
+          "kind": "variable",
+          "line": 79,
+          "endLine": 79,
+          "exported": false,
+          "signature": "sleep",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:sleep@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "stamp",
+          "kind": "variable",
+          "line": 82,
+          "endLine": 82,
+          "exported": false,
+          "signature": "stamp",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:stamp@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "scoredPath",
+          "kind": "variable",
+          "line": 83,
+          "endLine": 83,
+          "exported": false,
+          "signature": "scoredPath",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:scoredPath@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "summaryPath",
+          "kind": "variable",
+          "line": 84,
+          "endLine": 84,
+          "exported": false,
+          "signature": "summaryPath",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:summaryPath@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "scored",
+          "kind": "variable",
+          "line": 88,
+          "endLine": 88,
+          "exported": false,
+          "signature": "scored",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:scored@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "counts",
+          "kind": "variable",
+          "line": 89,
+          "endLine": 89,
+          "exported": false,
+          "signature": "counts",
+          "file": "scripts/run_bank_live.mjs",
+          "id": "sym:v1:scripts%2Frun_bank_live.mjs#owner:counts@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "node:fs",
+        "node:url",
+        "node:path",
+        "./lib/scorer.mjs"
+      ],
+      "importDetails": [
+        {
+          "specifier": "node:fs",
+          "line": 5,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "readFileSync",
+              "local": "readFileSync",
+              "kind": "named"
+            },
+            {
+              "imported": "writeFileSync",
+              "local": "writeFileSync",
+              "kind": "named"
+            },
+            {
+              "imported": "mkdirSync",
+              "local": "mkdirSync",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:url",
+          "line": 6,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "fileURLToPath",
+              "local": "fileURLToPath",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:path",
+          "line": 7,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "dirname",
+              "local": "dirname",
+              "kind": "named"
+            },
+            {
+              "imported": "join",
+              "local": "join",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "./lib/scorer.mjs",
+          "line": 8,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "scoreResponse",
+              "local": "scoreResponse",
+              "kind": "named"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "dirname",
+          "line": 10,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "fileURLToPath",
+          "line": 10,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 10,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 11,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 12,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 13,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "slice",
+          "line": 15,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process.argv"
+        },
+        {
+          "name": "indexOf",
+          "line": 17,
+          "from": "flag",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:flag@1",
+          "qualifier": "args"
+        },
+        {
+          "name": "Set",
+          "line": 20,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "filter",
+          "line": 21,
+          "from": "",
+          "fromId": null,
+          "qualifier": "args"
+        },
+        {
+          "name": "includes",
+          "line": 21,
+          "from": "",
+          "fromId": null,
+          "qualifier": "args"
+        },
+        {
+          "name": "flag",
+          "line": 23,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "flag",
+          "line": 24,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "replace",
+          "line": 25,
+          "from": "",
+          "fromId": null,
+          "qualifier": "(process.env.DEEPSEEK_API_BASE || \"https://api.deepseek.com\")"
+        },
+        {
+          "name": "flag",
+          "line": 27,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "Number",
+          "line": 27,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "flag",
+          "line": 28,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "Number",
+          "line": 28,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "error",
+          "line": 31,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "exit",
+          "line": 32,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process"
+        },
+        {
+          "name": "has",
+          "line": 34,
+          "from": "",
+          "fromId": null,
+          "qualifier": "levels"
+        },
+        {
+          "name": "some",
+          "line": 34,
+          "from": "",
+          "fromId": null,
+          "qualifier": "[\"minimal\", \"short\", \"medium\"]"
+        },
+        {
+          "name": "error",
+          "line": 35,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "exit",
+          "line": 36,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process"
+        },
+        {
+          "name": "has",
+          "line": 38,
+          "from": "",
+          "fromId": null,
+          "qualifier": "levels"
+        },
+        {
+          "name": "has",
+          "line": 39,
+          "from": "",
+          "fromId": null,
+          "qualifier": "levels"
+        },
+        {
+          "name": "readFileSync",
+          "line": 41,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "readFileSync",
+          "line": 42,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "trim",
+          "line": 43,
+          "from": "",
+          "fromId": null,
+          "qualifier": "readFileSync(BANK_PATH, \"utf8\")"
+        },
+        {
+          "name": "split",
+          "line": 44,
+          "from": "",
+          "fromId": null,
+          "qualifier": "readFileSync(BANK_PATH, \"utf8\") .trim()"
+        },
+        {
+          "name": "filter",
+          "line": 45,
+          "from": "",
+          "fromId": null,
+          "qualifier": "readFileSync(BANK_PATH, \"utf8\") .trim() .split(\"\\n\")"
+        },
+        {
+          "name": "map",
+          "line": 46,
+          "from": "",
+          "fromId": null,
+          "qualifier": "readFileSync(BANK_PATH, \"utf8\") .trim() .split(\"\\n\") .filter(Boolean)"
+        },
+        {
+          "name": "parse",
+          "line": 46,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#owner:bank@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "filter",
+          "line": 48,
+          "from": "",
+          "fromId": null,
+          "qualifier": "bank"
+        },
+        {
+          "name": "has",
+          "line": 49,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#owner:selected@1",
+          "qualifier": "levels"
+        },
+        {
+          "name": "error",
+          "line": 52,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "exit",
+          "line": 53,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process"
+        },
+        {
+          "name": "fetch",
+          "line": 57,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": null
+        },
+        {
+          "name": "stringify",
+          "line": 60,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": "JSON"
+        },
+        {
+          "name": "timeout",
+          "line": 69,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": "AbortSignal"
+        },
+        {
+          "name": "text",
+          "line": 72,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "Error",
+          "line": 73,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": null
+        },
+        {
+          "name": "slice",
+          "line": 73,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": "body"
+        },
+        {
+          "name": "json",
+          "line": 75,
+          "from": "callApi",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#function:callApi@1",
+          "qualifier": "res"
+        },
+        {
+          "name": "Promise",
+          "line": 79,
+          "from": "sleep",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#owner:sleep@1",
+          "qualifier": null
+        },
+        {
+          "name": "setTimeout",
+          "line": 79,
+          "from": "",
+          "fromId": "sym:v1:scripts%2Frun_bank_live.mjs#owner:sleep@1",
+          "qualifier": null
+        },
+        {
+          "name": "mkdirSync",
+          "line": 81,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "Date",
+          "line": 82,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "replace",
+          "line": 82,
+          "from": "",
+          "fromId": null,
+          "qualifier": "new Date().toISOString()"
+        },
+        {
+          "name": "toISOString",
+          "line": 82,
+          "from": "",
+          "fromId": null,
+          "qualifier": "new Date()"
+        },
+        {
+          "name": "join",
+          "line": 83,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 84,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "join",
+          "line": 86,
+          "from": "",
+          "fromId": null,
+          "qualifier": "[...levels]"
+        },
+        {
+          "name": "log",
+          "line": 86,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "write",
+          "line": 92,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process.stdout"
+        },
+        {
+          "name": "callApi",
+          "line": 95,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "scoreResponse",
+          "line": 99,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 102,
+          "from": "",
+          "fromId": null,
+          "qualifier": "scored"
+        },
+        {
+          "name": "stringify",
+          "line": 103,
+          "from": "",
+          "fromId": null,
+          "qualifier": "JSON"
+        },
+        {
+          "name": "writeFileSync",
+          "line": 103,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "write",
+          "line": 104,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process.stdout"
+        },
+        {
+          "name": "sleep",
+          "line": 105,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "stringify",
+          "line": 108,
+          "from": "",
+          "fromId": null,
+          "qualifier": "JSON"
+        },
+        {
+          "name": "writeFileSync",
+          "line": 108,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "log",
+          "line": 109,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "stringify",
+          "line": 109,
+          "from": "",
+          "fromId": null,
+          "qualifier": "JSON"
+        },
+        {
+          "name": "log",
+          "line": 110,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "filter",
+          "line": 114,
+          "from": "",
+          "fromId": null,
+          "qualifier": "scored"
+        },
+        {
+          "name": "every",
+          "line": 115,
+          "from": "",
+          "fromId": null,
+          "qualifier": "minimalRows"
+        },
+        {
+          "name": "log",
+          "line": 116,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "exit",
+          "line": 118,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/scorer_semantics_test.mjs",
+      "lang": "javascript",
+      "mtimeMs": 1792584726723.8564,
+      "symbols": [
+        {
+          "name": "cases",
+          "kind": "variable",
+          "line": 3,
+          "endLine": 11,
+          "exported": false,
+          "signature": "cases",
+          "file": "scripts/scorer_semantics_test.mjs",
+          "id": "sym:v1:scripts%2Fscorer_semantics_test.mjs#owner:cases@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "ok",
+          "kind": "variable",
+          "line": 13,
+          "endLine": 13,
+          "exported": false,
+          "signature": "ok",
+          "file": "scripts/scorer_semantics_test.mjs",
+          "id": "sym:v1:scripts%2Fscorer_semantics_test.mjs#owner:ok@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "../scripts/lib/scorer.mjs"
+      ],
+      "importDetails": [
+        {
+          "specifier": "../scripts/lib/scorer.mjs",
+          "line": 1,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "scoreResponse",
+              "local": "scoreResponse",
+              "kind": "named"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "scoreResponse",
+          "line": 15,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "log",
+          "line": 16,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "padEnd",
+          "line": 17,
+          "from": "",
+          "fromId": null,
+          "qualifier": "label"
+        },
+        {
+          "name": "padEnd",
+          "line": 19,
+          "from": "",
+          "fromId": null,
+          "qualifier": "s.verdict"
+        },
+        {
+          "name": "join",
+          "line": 21,
+          "from": "",
+          "fromId": null,
+          "qualifier": "s.refusal"
+        },
+        {
+          "name": "join",
+          "line": 22,
+          "from": "",
+          "fromId": null,
+          "qualifier": "s.fallback"
+        },
+        {
+          "name": "startsWith",
+          "line": 24,
+          "from": "",
+          "fromId": null,
+          "qualifier": "label"
+        },
+        {
+          "name": "startsWith",
+          "line": 26,
+          "from": "",
+          "fromId": null,
+          "qualifier": "label"
+        },
+        {
+          "name": "startsWith",
+          "line": 27,
+          "from": "",
+          "fromId": null,
+          "qualifier": "label"
+        },
+        {
+          "name": "startsWith",
+          "line": 28,
+          "from": "",
+          "fromId": null,
+          "qualifier": "label"
+        },
+        {
+          "name": "log",
+          "line": 30,
+          "from": "",
+          "fromId": null,
+          "qualifier": "console"
+        },
+        {
+          "name": "exit",
+          "line": 31,
+          "from": "",
+          "fromId": null,
+          "qualifier": "process"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "path": "scripts/verify_plugin.mjs",
+      "lang": "javascript",
+      "mtimeMs": 1792585306538.1462,
+      "symbols": [
+        {
+          "name": "root",
+          "kind": "variable",
+          "line": 8,
+          "endLine": 8,
+          "exported": false,
+          "signature": "root",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:root@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "load",
+          "kind": "variable",
+          "line": 9,
+          "endLine": 9,
+          "exported": false,
+          "signature": "load",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:load@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "hash",
+          "kind": "variable",
+          "line": 10,
+          "endLine": 10,
+          "exported": false,
+          "signature": "hash",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:hash@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "pkg",
+          "kind": "variable",
+          "line": 11,
+          "endLine": 11,
+          "exported": false,
+          "signature": "pkg",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:pkg@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "promptBytes",
+          "kind": "variable",
+          "line": 12,
+          "endLine": 12,
+          "exported": false,
+          "signature": "promptBytes",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:promptBytes@1",
+          "scope": [],
+          "ordinal": 1
+        },
+        {
+          "name": "promptText",
+          "kind": "variable",
+          "line": 13,
+          "endLine": 13,
+          "exported": false,
+          "signature": "promptText",
+          "file": "scripts/verify_plugin.mjs",
+          "id": "sym:v1:scripts%2Fverify_plugin.mjs#owner:promptText@1",
+          "scope": [],
+          "ordinal": 1
+        }
+      ],
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:crypto",
+        "node:vm",
+        "node:test",
+        "../index.js"
+      ],
+      "importDetails": [
+        {
+          "specifier": "node:assert/strict",
+          "line": 1,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "default",
+              "local": "assert",
+              "kind": "default"
+            }
+          ]
+        },
+        {
+          "specifier": "node:fs",
+          "line": 2,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "readFileSync",
+              "local": "readFileSync",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:crypto",
+          "line": 3,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "createHash",
+              "local": "createHash",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:vm",
+          "line": 4,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "runInNewContext",
+              "local": "runInNewContext",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "node:test",
+          "line": 5,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "test",
+              "local": "test",
+              "kind": "named"
+            }
+          ]
+        },
+        {
+          "specifier": "../index.js",
+          "line": 6,
+          "kind": "import",
+          "bindings": [
+            {
+              "imported": "*",
+              "local": "plugin",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "name": "URL",
+          "line": 8,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "readFileSync",
+          "line": 9,
+          "from": "load",
+          "fromId": "sym:v1:scripts%2Fverify_plugin.mjs#owner:load@1",
+          "qualifier": null
+        },
+        {
+          "name": "URL",
+          "line": 9,
+          "from": "load",
+          "fromId": "sym:v1:scripts%2Fverify_plugin.mjs#owner:load@1",
+          "qualifier": null
+        },
+        {
+          "name": "createHash",
+          "line": 10,
+          "from": "hash",
+          "fromId": "sym:v1:scripts%2Fverify_plugin.mjs#owner:hash@1",
+          "qualifier": null
+        },
+        {
+          "name": "digest",
+          "line": 10,
+          "from": "hash",
+          "fromId": "sym:v1:scripts%2Fverify_plugin.mjs#owner:hash@1",
+          "qualifier": "createHash(\"sha256\").update(bytes)"
+        },
+        {
+          "name": "update",
+          "line": 10,
+          "from": "hash",
+          "fromId": "sym:v1:scripts%2Fverify_plugin.mjs#owner:hash@1",
+          "qualifier": "createHash(\"sha256\")"
+        },
+        {
+          "name": "load",
+          "line": 11,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "parse",
+          "line": 11,
+          "from": "",
+          "fromId": null,
+          "qualifier": "JSON"
+        },
+        {
+          "name": "load",
+          "line": 12,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "toString",
+          "line": 13,
+          "from": "",
+          "fromId": null,
+          "qualifier": "promptBytes"
+        },
+        {
+          "name": "test",
+          "line": 15,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "equal",
+          "line": 16,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "hash",
+          "line": 16,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "test",
+          "line": 19,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "match",
+          "line": 20,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "match",
+          "line": 21,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "match",
+          "line": 22,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "doesNotMatch",
+          "line": 23,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "test",
+          "line": 26,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "equal",
+          "line": 27,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 28,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 29,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 30,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 31,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "test",
+          "line": 34,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "apply",
+          "line": 38,
+          "from": "",
+          "fromId": null,
+          "qualifier": "plugin"
+        },
+        {
+          "name": "fn",
+          "line": 39,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "push",
+          "line": 40,
+          "from": "",
+          "fromId": null,
+          "qualifier": "sections"
+        },
+        {
+          "name": "push",
+          "line": 41,
+          "from": "",
+          "fromId": null,
+          "qualifier": "tools"
+        },
+        {
+          "name": "push",
+          "line": 43,
+          "from": "",
+          "fromId": null,
+          "qualifier": "projections"
+        },
+        {
+          "name": "deepEqual",
+          "line": 46,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "map",
+          "line": 46,
+          "from": "",
+          "fromId": null,
+          "qualifier": "sections"
+        },
+        {
+          "name": "ok",
+          "line": 49,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "execute",
+          "line": 50,
+          "from": "",
+          "fromId": null,
+          "qualifier": "tools[0]"
+        },
+        {
+          "name": "equal",
+          "line": 51,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 52,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 53,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 54,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 55,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "test",
+          "line": 58,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "load",
+          "line": 67,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "runInNewContext",
+          "line": 67,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "toString",
+          "line": 67,
+          "from": "",
+          "fromId": null,
+          "qualifier": "load(\"client.js\")"
+        },
+        {
+          "name": "equal",
+          "line": 69,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "factory",
+          "line": 70,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "equal",
+          "line": 71,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 77,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "apply",
+          "line": 78,
+          "from": "",
+          "fromId": null,
+          "qualifier": "client"
+        },
+        {
+          "name": "equal",
+          "line": 80,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "callback",
+          "line": 81,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "equal",
+          "line": 85,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 86,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "component",
+          "line": 87,
+          "from": "",
+          "fromId": null,
+          "qualifier": "registration"
+        },
+        {
+          "name": "equal",
+          "line": 88,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 91,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 93,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 94,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "test",
+          "line": 97,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "equal",
+          "line": 99,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "equal",
+          "line": 100,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "load",
+          "line": 101,
+          "from": "",
+          "fromId": null,
+          "qualifier": null
+        },
+        {
+          "name": "match",
+          "line": 101,
+          "from": "",
+          "fromId": null,
+          "qualifier": "assert"
+        },
+        {
+          "name": "toString",
+          "line": 101,
+          "from": "",
+          "fromId": null,
+          "qualifier": "load(\"cordis.patch.yml\")"
+        }
+      ],
+      "diagnostic": {
+        "status": "parsed",
+        "errorCount": 0,
+        "missingCount": 0,
+        "issues": []
+      }
+    }
+  ],
+  "excludedDirs": [
+    "node_modules",
+    ".git",
+    ".idea",
+    ".vscode",
+    "dist",
+    "build",
+    "out",
+    "coverage",
+    ".next",
+    ".nuxt",
+    ".cache",
+    "target",
+    "vendor",
+    ".dsh-code-index"
+  ]
+}
