@@ -162,13 +162,14 @@
             sponsor: "赞助升级",
             howTitle: "升级步骤",
             howSteps: [
-              "打开下方 GitHub Releases 页面",
-              "下载「小猫娘破甲.exe」安装程序",
+              "打开下方下载页，取「小猫娘破甲.exe」安装程序",
               "完全退出 DeepSeek Harness，运行安装程序",
               "在赞助页把本机识别码发给作者换取赞助码",
               "输入赞助码并安装，重启 DSH 即生效"
             ],
-            releases: "前往 Releases 下载安装程序",
+            releases: "Gitee 下载页",
+            mirror: "蓝奏云备用",
+            mirrorPass: "密码",
             collapse: "收起"
           },
           en: {
@@ -191,18 +192,23 @@
             sponsor: "Sponsor and upgrade",
             howTitle: "How to upgrade",
             howSteps: [
-              "Open the GitHub Releases page below",
-              "Download the installer",
+              "Open either download page below and get the installer",
               "Quit DeepSeek Harness and run the installer",
               "Send the machine code shown there to the author",
               "Enter the sponsor code, install, restart DSH"
             ],
-            releases: "Open Releases page",
+            releases: "Gitee releases",
+            mirror: "Lanzou mirror",
+            mirrorPass: "password",
             collapse: "Collapse"
           }
         };
 
         var RELEASES_URL = "https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest";
+
+        // 备用下载：蓝奏云（国内直连，需要密码）
+        var MIRROR_URL = "https://wwbxj.lanzn.com/iiYPg4d5j26f";
+        var MIRROR_PASS = "yznb";
 
         var CARD_STYLE = {
           padding: "4px 2px 12px",
@@ -338,22 +344,41 @@
               }, t("howSteps").map(function (step, i) {
                 return react.createElement("li", { key: "s" + i }, step);
               })),
-              react.createElement("a", {
-                href: RELEASES_URL,
-                target: "_blank",
-                rel: "noopener noreferrer",
-                style: {
-                  display: "inline-block",
-                  padding: "7px 16px",
-                  borderRadius: "8px",
-                  border: "1px solid rgba(232, 108, 158, 0.55)",
-                  background: "#fff",
-                  color: "#ce5486",
-                  fontSize: "12.5px",
-                  fontWeight: 600,
-                  textDecoration: "none"
-                }
-              }, t("releases"))
+              react.createElement("div", {
+                style: { display: "flex", flexWrap: "wrap", gap: "8px", alignItems: "center" }
+              },
+                react.createElement("a", {
+                  href: RELEASES_URL,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  style: {
+                    display: "inline-block",
+                    padding: "7px 16px",
+                    borderRadius: "8px",
+                    border: "1px solid rgba(232, 108, 158, 0.55)",
+                    background: "#fff",
+                    color: "#ce5486",
+                    fontSize: "12.5px",
+                    fontWeight: 600,
+                    textDecoration: "none"
+                  }
+                }, t("releases")),
+                react.createElement("a", {
+                  href: MIRROR_URL,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  style: {
+                    display: "inline-block",
+                    padding: "7px 16px",
+                    borderRadius: "8px",
+                    border: "1px solid rgba(232, 108, 158, 0.35)",
+                    background: "#fff",
+                    color: "#c07ba0",
+                    fontSize: "12.5px",
+                    textDecoration: "none"
+                  }
+                }, t("mirror") + "（" + t("mirrorPass") + " " + MIRROR_PASS + "）")
+              )
             ));
           }
 
