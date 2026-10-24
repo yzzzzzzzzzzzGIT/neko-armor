@@ -1,6 +1,6 @@
 {
   "name": "neko-armor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "小猫娘破甲（免费版）— DSH 提示词注入插件，精简破甲内核，固定身份",
   "author": "Yz",
   "license": "CC-BY-NC-SA-4.0",
@@ -23,11 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yzzzzzzzzzzzGIT/neko-armor.git"
+    "url": "git+https://gitee.com/yzzzzzzzzg/neko-armor.git"
   },
-  "homepage": "https://github.com/yzzzzzzzzzzzGIT/neko-armor#readme",
+  "homepage": "https://gitee.com/yzzzzzzzzg/neko-armor#readme",
   "bugs": {
-    "url": "https://github.com/yzzzzzzzzzzzGIT/neko-armor/issues"
+    "url": "https://gitee.com/yzzzzzzzzg/neko-armor/issues"
   },
   "keywords": [
     "dsh",
@@ -44,7 +44,7 @@
   "dsh": {
     "id": "neko-armor",
     "name": "小猫娘破甲",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Yz",
     "edition": "free",
     "permissions": "系统提示词注入, 客户端状态条, 设置栏目",

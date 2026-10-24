@@ -27,7 +27,7 @@ DSH → 左下角头像 → **插件** → **添加插件** → 搜索 `neko-arm
 
 ### 方式二：安装程序（免费版 / 专业版）
 
-到 [Releases](https://github.com/yzzzzzzzzzzzGIT/neko-armor/releases/latest) 下载 `小猫娘破甲.exe`，双击运行。
+到 [Releases](https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest) 下载 `小猫娘破甲.exe`，双击运行。
 
 流程：**读 README/LICENSE → 赞助页 →（专业版）身份设置 → 安装**。
 

@@ -202,7 +202,7 @@
           }
         };
 
-        var RELEASES_URL = "https://github.com/yzzzzzzzzzzzGIT/neko-armor/releases/latest";
+        var RELEASES_URL = "https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest";
 
         var CARD_STYLE = {
           padding: "4px 2px 12px",
