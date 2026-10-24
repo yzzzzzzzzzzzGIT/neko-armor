@@ -206,9 +206,9 @@
 
         var RELEASES_URL = "https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest";
 
-        // 备用下载：蓝奏云（国内直连，需要密码）
-        var MIRROR_URL = "https://wwbxj.lanzn.com/iiYPg4d5j26f";
-        var MIRROR_PASS = "yznb";
+        // 备用下载：蓝奏云文件夹（国内直连，需要密码）
+        var MIRROR_URL = "https://wwbxj.lanzn.com/b00z21847c";
+        var MIRROR_PASS = "5nfn";
 
         var CARD_STYLE = {
           padding: "4px 2px 12px",

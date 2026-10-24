@@ -32,7 +32,7 @@ DSH → 左下角头像 → **插件** → **添加插件** → 搜索 `neko-arm
 | 来源 | 地址 | 说明 |
 | --- | --- | --- |
 | Gitee Releases | [releases/latest](https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest) | 直接下 `小猫娘破甲.exe` |
-| 蓝奏云 | [wwbxj.lanzn.com/iiYPg4d5j26f](https://wwbxj.lanzn.com/iiYPg4d5j26f) | 密码 `yznb`，下载后解压得 exe |
+| 蓝奏云 | [wwbxj.lanzn.com/b00z21847c](https://wwbxj.lanzn.com/b00z21847c) | 密码 `5nfn`，进文件夹下载 zip 后解压 |
 
 下载后双击运行。
 
