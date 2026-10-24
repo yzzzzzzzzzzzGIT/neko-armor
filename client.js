@@ -318,6 +318,10 @@
 
           children.push(
             react.createElement("div", { key: "h", style: HEADING_STYLE }, t("heading")),
+            react.createElement("div", {
+              key: "ver",
+              style: { fontSize: "12px", color: "#a29aa6", margin: "-2px 0 10px" }
+            }, "版本 " + ((info && info.version) ? info.version : "…") + " · npm 插件市场安装"),
             react.createElement("div", { key: "s", style: SUB_STYLE }, t("subtitle")),
 
             react.createElement("div", { key: "ft", style: SECTION_TITLE_STYLE }, t("freeTitle")),
@@ -401,19 +405,46 @@
               return ctx.locale.register(SETTINGS_NS, I18N);
             }, "neko-armor: dictionaries");
 
-            ctx.effect(function () {
-              return ctx.slots.inject("settings.section", function () {
+            // 左侧栏目标题带版本号：先挂默认名，拿到版本后重挂一次
+            var labelText = t("title");
+            var currentDispose = null;
+
+            function mountSection() {
+              if (currentDispose) {
+                currentDispose();
+                currentDispose = null;
+              }
+              currentDispose = ctx.slots.inject("settings.section", function () {
                 return ctx.slots.register({
                   name: "settings.section",
                   id: "neko-armor",
                   order: 60,
-                  label: function () { return t("title"); },
+                  label: function () { return labelText; },
                   locale: SETTINGS_NS
                 }, function (slotProps) {
                   return react.createElement(NekoFreeSection, Object.assign({ t: t }, slotProps));
                 });
               });
+            }
+
+            ctx.effect(function () {
+              mountSection();
+              return function () {
+                if (currentDispose) currentDispose();
+              };
             }, "neko-armor: free settings section");
+
+            // 版本号来自插件自己的 package.json，取到后同步到栏目标题
+            fetch("/api/neko-armor/info", { headers: { Accept: "application/json" } })
+              .then(function (res) { return res.json(); })
+              .then(function (data) {
+                if (!data || !data.version) return;
+                var next = t("title") + " v" + data.version;
+                if (next === labelText) return;
+                labelText = next;
+                mountSection();
+              })
+              .catch(function () {});
           } catch (err) {
             console.warn("[neko-armor] 设置栏目未注册：", err);
           }

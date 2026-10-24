@@ -2,7 +2,36 @@
 
 一个用于 DSH 的本地提示词注入插件。分**免费版**与**专业版（赞助）**，同一个安装器分发。
 
-作者：**Yz**　版本：`1.0.0`　插件标识：`neko-armor`
+作者：**Yz**　版本：`1.0.6`　插件标识：`neko-armor`
+
+## 更新日志
+
+### 1.0.6
+
+- 安装器改为把插件写进 `dsh.profile.bundles`，插件页能够正确显示「已启用」并允许开关
+- 卸载时同步从 bundles 剔除，恢复干净状态
+- 身份配置改存 `~/.dsh/neko-armor-config.json`，不再往 `cordis.patch.yml` 塞 insert，避免重复挂载
+- 专业版补齐版本显示与栏目标题版本号
+
+### 1.0.5
+
+- 蓝奏云分享改为文件夹，地址与密码 `yznb`
+
+### 1.0.4
+
+- 下载入口迁移到 Gitee，新增蓝奏云备用链路
+
+### 1.0.3
+
+- 版本号改为从 `package.json` 自动注入，杜绝界面显示与包版本不一致
+
+### 1.0.2
+
+- 修复条款窗口读不到 README 的问题
+
+### 1.0.1
+
+- 首个可用版本
 
 ## 两个版本
 
@@ -14,8 +43,21 @@
 | 身份 | 固定「小猫娘」 | 可自定义，激活词跟随身份 |
 | 自定义人设 | 无 | 支持 |
 | 附加要求 | 无 | 支持 |
-| 设置栏目 | 不显示 | 设置 → 小猫娘破甲 |
+| 设置栏目 | 显示版本信息与赞助入口 | 显示完整配置表单 |
 | 输入框下方状态条 | 显示「小猫娘破甲（免费版）」 | 显示「小猫娘破甲」 |
+
+## 版本号从哪来
+
+唯一来源是 `package.json` 的 `version` 字段，其余位置全部跟随：
+
+| 位置 | 读取方式 |
+| --- | --- |
+| 安装器标题栏 | 打包时注入 `Bootstrap.Version` |
+| 设置栏目内容 | 插件 `index.js` 运行时读 `package.json` |
+| 设置左侧栏目标题 | 客户端 fetch `/api/neko-armor/info` |
+| DSH 插件列表 | DSH 自读 `package.json` |
+
+改版本只需要改 `package.json` 一处。
 
 ## 安装
 
@@ -64,15 +106,24 @@ pnpm add neko-armor
 
 重启 DSH。
 
-## 两版差异
+> 安装器装的话会写进 `dsh.profile.bundles` 而不是 insert，这样插件页才能显示「已启用」。
+> 手动装的话两种都行，bundles 方式对插件页更友好。
 
-| | 免费版（npm / 源码） | 专业版（Releases 安装程序） |
+## 挂载方式说明
+
+DSH 有两条挂载路径，效果一样，但插件页的识别不同：
+
+| 方式 | 写在哪 | 插件页 |
 | --- | --- | --- |
-| 获取方式 | 插件市场 / npm | GitHub Releases |
-| 提示词 | `prompts/free.md`，约 1 KB | 完整内核，AES-256 加密 |
-| 称呼 / 身份 / 人设 / 附加要求 | 固定 | 全部可自定义 |
-| 设置栏目 | 只显示版本信息与赞助入口 | 完整配置表单 |
-| 状态条 | 带「（免费版）」 | 无后缀 |
+| bundles | `package.json` 的 `dsh.profile.bundles` | 显示已启用，可开关 |
+| insert | `cordis.patch.yml` 的 `- insert:` | 不显示状态，但功能正常 |
+
+安装器和新版本都走 bundles。**前提是 `dependencies` 里同时有本插件**，只写 bundles 不写依赖会导致宿主启动失败。
+
+```json
+"dependencies": { "neko-armor": "file:../../plugins/neko-armor" },
+"dsh": { "profile": { "bundles": [ ..., "neko-armor" ] } }
+```
 
 ## 命令行
 
@@ -129,7 +180,7 @@ npm publish --access public
 
 包内只含 7 个文件（`npm pack --dry-run` 可核对），绝不包含 `neko.md` / `neko.enc`。
 
-### 安装程序 → GitHub Releases
+### 安装程序 → Gitee Releases
 
 ```bash
 node packaging/encrypt-pro.mjs   # 先重加密专业版提示词
@@ -137,6 +188,14 @@ node packaging/build.mjs         # 打包两版进 EXE
 ```
 
 把 `dist/小猫娘破甲.exe` 上传到 Releases 页面。
+
+**每次发布前记得更新本文件**：改上面的版本号、补更新日志，然后：
+
+```bash
+node -e "const p=require('./package.json');p.version='1.0.7';p.dsh.version='1.0.7';require('fs').writeFileSync('package.json',JSON.stringify(p,null,2)+'\n')"
+```
+
+版本号只改 `package.json` 一处，界面、插件页、安装器标题会自动跟随。
 
 改了专业版提示词必须重跑 `encrypt-pro.mjs`，否则 `neko.enc` 仍是旧内容。
 

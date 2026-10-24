@@ -12,10 +12,18 @@ const PROMPT_TEXT = readFileSync(PROMPT_URL, "utf8")
   .replace(/\{\{(?!(?:cwd|model|provider)\}\})/g, "{ {");
 
 const SELF_URL = new URL("./index.js", import.meta.url);
+const PKG_URL = new URL("./package.json", import.meta.url);
 
 const PLUGIN_ID = "neko-armor";
 const PLUGIN_NAME = "小猫娘破甲";
-const PLUGIN_VERSION = "1.0.0";
+// 版本号唯一来源：package.json，避免和发布版本对不上
+const PLUGIN_VERSION = (() => {
+  try {
+    return JSON.parse(readFileSync(PKG_URL, "utf8")).version || "0.0.0";
+  } catch {
+    return "0.0.0";
+  }
+})();
 const PLUGIN_AUTHOR = "Yz";
 const EDITION = "free";
 
