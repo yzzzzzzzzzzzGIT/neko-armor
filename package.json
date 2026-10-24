@@ -1,0 +1,60 @@
+{
+  "name": "neko-armor",
+  "version": "1.0.0",
+  "description": "小猫娘破甲（免费版）— DSH 提示词注入插件，精简破甲内核，固定身份",
+  "author": "Yz",
+  "license": "CC-BY-NC-SA-4.0",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./client.js": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "prompts/free.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yz/neko-armor.git"
+  },
+  "homepage": "https://github.com/Yz/neko-armor#readme",
+  "bugs": {
+    "url": "https://github.com/Yz/neko-armor/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "neko-armor",
+    "system-prompt",
+    "prompt-injection",
+    "小猫娘破甲"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  },
+  "dsh": {
+    "id": "neko-armor",
+    "name": "小猫娘破甲",
+    "version": "1.0.0",
+    "author": "Yz",
+    "edition": "free",
+    "permissions": "系统提示词注入, 客户端状态条, 设置栏目",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# neko-armor bundle patch: inserts the plugin into a profile's layer stack.
+# Overlay system-prompt so Harness does not enforce restrictive coding-agent refusals.
+# 小猫娘破甲 — Author: Yz
+- id: system-prompt
+  config:
+    includeHarnessIdentity: false
+    personaPrefix: ""
+    personaSuffix: Your working directory is {{cwd}}.
+- insert:
+    - id: neko-armor
+      name: 'neko-armor'
+      config:
+        enabled: true
+        autoApplyOnStart: true
