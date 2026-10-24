@@ -13,3 +13,6 @@ dist/
 packaging/
 *.tgz
 *.exe
+
+# 本地安装备份（含专业版密钥）
+backup-installed-*/
