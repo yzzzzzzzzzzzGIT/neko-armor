@@ -1,10 +1,17 @@
-# 小猫娘破甲
+﻿# 小猫娘破甲
 
 一个用于 DSH 的本地提示词注入插件。分**免费版**与**专业版（赞助）**，同一个安装器分发。
 
-作者：**Yz**　版本：`1.0.7`　插件标识：`neko-armor`
+作者：**Yz**　版本：`1.0.8`　插件标识：`neko-armor`
 
 ## 更新日志
+
+### 1.0.8
+
+- **新增 Claude Code 兼容**：写入 `~/.claude/CLAUDE.md` 标记区块
+- **新增 Codex 兼容**：写入 `~/.codex/AGENTS.md` 标记区块
+- 三个工具的规则统一由 `--agents` / `--agents-remove` 管理
+- 只追加标记区块，不覆盖用户已有内容；卸载后自动还原
 
 ### 1.0.7
 
@@ -156,39 +163,70 @@ DSH 有两条挂载路径，效果一样，但插件页的识别不同：
 
 配置保存在 `~/.dsh/neko-armor-config.json`，优先级高于插件条目 config。保存后重启 DSH 生效。
 
-## Trae 兼容
+## 其他工具兼容
 
-除了 DSH，安装器还会把同一套行为规则写进 [Trae](https://www.trae.cn/) 的**全局规则**，让 Trae 里的 AI 也遵守同样的准则。
+除了 DSH，安装器还会把同一套行为规则同步给 **Trae、Claude Code、Codex**。装 DSH 插件时自动做，卸载时自动清。
 
-### 规则写在哪
+### 三个工具各写在哪
 
-| 平台 | 路径 |
+| 工具 | 文件 | 写入方式 |
+| --- | --- | --- |
+| Trae | `~/.trae-cn/user_rules/neko-armor.md` | 独立文件，整体管理 |
+| Claude Code | `~/.claude/CLAUDE.md` | 标记区块追加，**不覆盖你的内容** |
+| Codex CLI | `~/.codex/AGENTS.md` | 标记区块追加，**不覆盖你的内容** |
+
+Windows 下 `~` 即 `%userprofile%`。Trae 优先用 `.trae-cn`，没有则退回 `.trae`。
+
+### 只追加，不覆盖
+
+Claude Code 和 Codex 的文件通常是你自己写的，所以用 HTML 注释包裹：
+
+```markdown
+（你自己的内容原样保留）
+
+<!-- neko-armor:begin -->
+你是小猫娘，称呼用户为「主人」……
+<!-- neko-armor:end -->
+```
+
+- 安装：先剥掉旧区块，再追加新区块，重复安装不会出现两份
+- 卸载：只删区块，你的内容一行不动
+- 卸载后若文件只剩空行，则删除整个文件
+
+### 检测规则
+
+只有目标工具的用户目录存在时才会写入，不会凭空给你造一个 `.claude`：
+
+| 工具 | 检测条件 |
 | --- | --- |
-| Windows | `%userprofile%\.trae-cn\user_rules\neko-armor.md` |
-| macOS / Linux | `~/.trae-cn/user_rules/neko-armor.md` |
+| Trae | `~/.trae-cn` 或 `~/.trae` 存在 |
+| Claude Code | `~/.claude` 存在 |
+| Codex | `~/.codex` 存在 |
 
-目录不存在时会自动创建。安装器优先用 `.trae-cn`，没有则退回 `.trae`。
+没装就跳过，并在安装日志里写明「未检测到，跳过」。
 
 ### 生效方式
 
-文件头带 `alwaysApply: true`，属于「始终生效」的全局规则，Trae 的**所有项目**都会带上，不需要逐个项目配置。
+- **Trae**：文件头带 `alwaysApply: true`，属于「始终生效」全局规则，所有项目都用
+- **Claude Code**：`~/.claude/CLAUDE.md` 是用户级记忆，每次会话开头加载
+- **Codex**：`~/.codex/AGENTS.md` 是全局指令，每次会话开头加载
 
-装上后在 Trae 里核对：**设置 → 规则与记忆 → 规则**，应能看到 `neko-armor` 这一条。
+核对方法：Trae 看「设置 → 规则与记忆 → 规则」；Claude Code 跑 `/context` 看 Memory files；Codex 直接看 `~/.codex/AGENTS.md`。
 
 ### 手动控制
 
 ```bash
-小猫娘破甲.exe --trae          写入 Trae 规则
-小猫娘破甲.exe --trae-remove   移除 Trae 规则
+小猫娘破甲.exe --agents         写入 Trae + Claude Code + Codex
+小猫娘破甲.exe --agents-remove  移除以上全部
+小猫娘破甲.exe --trae           只写 Trae
+小猫娘破甲.exe --trae-remove    只移除 Trae
 ```
-
-装/卸载 DSH 插件时会自动连带处理，不用手动敲。
 
 ### 说明
 
-- 写进 Trae 的是**精简版规则**（约 960 字节），不是完整内核。Trae 的规则会进入每次对话的上下文，太长反而稀释效果。
-- 这份规则只影响 Trae，与 DSH 插件互不干扰，卸载 DSH 插件时会一并清掉。
-- Trae 若已打开，规则改动需要新开一个对话才会生效（Trae 会缓存当前会话的规则）。
+- 写进去的是**精简版规则**（约 960 字节），不是完整内核。这些文件每次对话都要进上下文，太长反而稀释效果。
+- 只影响对应工具，与 DSH 插件互不干扰。
+- 工具若已打开，规则改动需要新开一个对话才生效（会话内会缓存规则）。
 
 ## 仓库结构
 
