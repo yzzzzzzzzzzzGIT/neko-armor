@@ -4,6 +4,9 @@ tests/runs/
 .DS_Store
 Thumbs.db
 
+# DSH 本地索引
+.dsh-code-index/
+
 # 专业版与构建产物：不进开源仓库
 Professional Edition/
 dist/
