@@ -16,3 +16,10 @@ packaging/
 
 # 本地安装备份（含专业版密钥）
 backup-installed-*/
+
+# 解包/逆向产物：含专业版明文提示词，绝不入库
+cracked-pro/
+build-pro/
+
+# 发版临时文件
+rel_id.txt

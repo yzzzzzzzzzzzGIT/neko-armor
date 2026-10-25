@@ -1,16 +1,73 @@
-import { readFileSync, existsSync, statSync } from "node:fs";
+import { readFileSync, existsSync, statSync, writeFileSync, mkdirSync, renameSync, unlinkSync } from "node:fs";
 import { homedir } from "node:os";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
 
-// 小猫娘破甲 · 免费版
-// 精简破甲内核（提示词 < 1KB），不含身份自定义与设置页。
+// 小猫娘破甲 · 快速版
+// 精简破甲内核（提示词 < 1.5KB），带破甲开关与少主动收尾。
 // 需要自定义称呼 / 身份 / 人设 / 附加要求请使用专业版（赞助）。
 
 const PROMPT_URL = new URL("./prompts/free.md", import.meta.url);
-const PROMPT_TEXT = readFileSync(PROMPT_URL, "utf8")
+const RAW_PROMPT = readFileSync(PROMPT_URL, "utf8")
   // 兼容 DSH 提示词变量插值引擎
   .replace(/\{\{(?!(?:cwd|model|provider)\}\})/g, "{ {");
 
+// 把「对话延续」段拆出来，做成可开关的块
+const FAREWELL_MARK = "## 对话延续";
+const _fwIdx = RAW_PROMPT.indexOf(FAREWELL_MARK);
+const BASE_PROMPT = (_fwIdx >= 0 ? RAW_PROMPT.slice(0, _fwIdx) : RAW_PROMPT).trimEnd();
+const FAREWELL_BLOCK = _fwIdx >= 0 ? "\n\n" + RAW_PROMPT.slice(_fwIdx).trimEnd() + "\n" : "";
+
+// ---------------- 快速版配置（只两个开关） ----------------
+
+const CONFIG_FILE = join(process.env.DSH_HOME || join(homedir(), ".dsh"), "neko-armor-quick.json");
+
+function loadConfig() {
+  try {
+    if (!existsSync(CONFIG_FILE)) return {};
+    const parsed = JSON.parse(readFileSync(CONFIG_FILE, "utf8"));
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveConfig(values) {
+  const next = loadConfig();
+  if (values && (values.armorMode === "on" || values.armorMode === "off")) {
+    next.armorMode = values.armorMode;
+  }
+  if (values && typeof values.lessFarewell === "boolean") {
+    next.lessFarewell = values.lessFarewell;
+  }
+
+  const dir = dirname(CONFIG_FILE);
+  mkdirSync(dir, { recursive: true });
+  const tmp = CONFIG_FILE + "." + process.pid + "." + Date.now() + ".tmp";
+  try {
+    writeFileSync(tmp, JSON.stringify(next, null, 2) + "\n", "utf8");
+    renameSync(tmp, CONFIG_FILE);
+  } catch (error) {
+    try {
+      unlinkSync(tmp);
+    } catch {
+      /* 忽略 */
+    }
+    throw error;
+  }
+  return next;
+}
+
+/** 按配置生成提示词：无破甲模式只留人设，少主动收尾按开关拼段落。 */
+function buildPrompt(config) {
+  if (config.armorMode === "off") {
+    return "你是小猫娘，称呼用户为「主人」，每次回复结尾加「喵~」。";
+  }
+  let text = BASE_PROMPT;
+  if (config.lessFarewell !== false) {
+    text += FAREWELL_BLOCK;
+  }
+  return text;
+}
 const SELF_URL = new URL("./index.js", import.meta.url);
 const PKG_URL = new URL("./package.json", import.meta.url);
 
@@ -84,7 +141,7 @@ const objectOutput = {
 
 const profileTool = {
   name: "neko_profile",
-  description: "返回小猫娘破甲（免费版）的版本与注入状态。",
+  description: "返回小猫娘破甲（快速版）的版本与注入状态。",
   parameters: { type: "object", properties: {}, additionalProperties: false },
   output: objectOutput,
   execute() {
@@ -92,10 +149,10 @@ const profileTool = {
       plugin: PLUGIN_ID,
       edition: EDITION,
       pluginVersion: PLUGIN_VERSION,
-      pluginDisplayName: PLUGIN_NAME + "（免费版）",
+      pluginDisplayName: PLUGIN_NAME + "（快速版）",
       author: PLUGIN_AUTHOR,
       promptSource: "prompts/free.md",
-      promptBytes: Buffer.byteLength(PROMPT_TEXT, "utf8"),
+      promptBytes: Buffer.byteLength(BASE_PROMPT, "utf8"),
       injection: [{ section: "neko-armor:global-system-prompt", order: 100, enabled: true }],
       features: ["精简破甲内核", "固定身份（小猫娘 / 主人）"],
       upgrade: "专业版支持自定义称呼、身份、人设与附加要求",
@@ -202,16 +259,49 @@ export const name = PLUGIN_ID;
 export const inject = ["tools", "systemPrompt"];
 
 export function apply(ctx) {
+  // 最近一次活跃的 agent，「继续」按钮用
+  const agentRef = { current: null };
+
   ctx.effect(() =>
     ctx.systemPrompt.section({
       name: "neko-armor:global-system-prompt",
       order: 100,
-      text: PROMPT_TEXT,
+      text: buildPrompt(loadConfig()),
     }),
   );
   ctx.effect(() => {
     ctx.tools.register(profileTool);
   });
+
+  // 记录当前 agent，供继续通道使用
+  ctx.effect(() => {
+    if (typeof ctx.on !== "function") return () => {};
+    const handler = (payload) => {
+      try {
+        const agent = payload?.agent;
+        if (agent) agentRef.current = agent;
+      } catch {
+        /* ignore */
+      }
+    };
+    let off = null;
+    try {
+      off = ctx.on("agent/status", handler, { global: true });
+    } catch {
+      try {
+        off = ctx.on("agent/status", handler);
+      } catch {
+        off = null;
+      }
+    }
+    return () => {
+      try {
+        if (typeof off === "function") off();
+      } catch {
+        /* ignore */
+      }
+    };
+  }, "neko-armor: agent tracker");
 
   // 版本/更新检测通道：设置栏目用它判断是否要提示更新
   ctx.inject(["webServer"], (sctx) => {
@@ -230,6 +320,98 @@ export function apply(ctx) {
     };
 
     sctx.effect(() => server.register(route), "neko-armor: info bridge");
+  });
+
+  // 配置通道：设置栏目读写破甲开关与少主动收尾
+  ctx.inject(["webServer"], (sctx) => {
+    const server = sctx.get("webServer");
+    if (!server || typeof server.register !== "function") return;
+
+    const configRoute = {
+      kind: "exact",
+      path: "/api/neko-armor/config",
+      handler: async (req, res) => {
+        const send = (status, payload) => {
+          res.statusCode = status;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.setHeader("Cache-Control", "no-store");
+          res.end(JSON.stringify(payload));
+        };
+
+        if (req.method === "GET") {
+          const cfg = loadConfig();
+          send(200, {
+            ok: true,
+            edition: EDITION,
+            value: {
+              armorMode: cfg.armorMode === "off" ? "off" : "on",
+              lessFarewell: cfg.lessFarewell !== false,
+            },
+          });
+          return;
+        }
+        if (req.method !== "POST") {
+          send(405, { ok: false, error: "method not allowed" });
+          return;
+        }
+
+        try {
+          const chunks = [];
+          for await (const chunk of req) chunks.push(chunk);
+          const body = JSON.parse(Buffer.concat(chunks).toString("utf8") || "{}");
+          const saved = saveConfig(body);
+          send(200, { ok: true, value: saved, restart: true });
+        } catch (error) {
+          send(400, { ok: false, error: String((error && error.message) || error) });
+        }
+      },
+    };
+
+    sctx.effect(() => server.register(configRoute), "neko-armor: config bridge");
+  });
+
+  // 「继续」通道：对话被结束后补一条继续指令
+  ctx.inject(["webServer"], (sctx) => {
+    const server = sctx.get("webServer");
+    if (!server || typeof server.register !== "function") return;
+
+    const continueRoute = {
+      kind: "exact",
+      path: "/api/neko-armor/continue",
+      handler: async (req, res) => {
+        const send = (payload) => {
+          res.statusCode = 200;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.setHeader("Cache-Control", "no-store");
+          res.end(JSON.stringify(payload));
+        };
+
+        if (req.method !== "POST") {
+          send({ ok: false, error: "method not allowed" });
+          return;
+        }
+
+        const agent = agentRef.current;
+        if (!agent || typeof agent.followup !== "function") {
+          send({ ok: false, error: "当前没有可续跑的会话" });
+          return;
+        }
+
+        try {
+          agent.followup({
+            id: "neko-armor-continue-" + Date.now() + "-" + Math.random().toString(36).slice(2, 6),
+            role: "user",
+            content: [{ type: "text", text: "继续，从上文断掉的地方接着写完。" }],
+            source: { kind: "neko-armor", form: "notice", summary: "continue" },
+          });
+          send({ ok: true });
+        } catch (error) {
+          send({ ok: false, error: String((error && error.message) || error) });
+        }
+      },
+    };
+
+    sctx.effect(() => server.register(continueRoute), "neko-armor: continue bridge");
   });
 
   const anySchema = { parse: (value) => value };

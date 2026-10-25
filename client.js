@@ -1,6 +1,6 @@
 (() => {
   try {
-    /* 小猫娘破甲 · 免费版 client half — 输入框下方状态条（Author: Yz） */
+    /* 小猫娘破甲 · 快速版 client half — 输入框下方状态条（Author: Yz） */
     window.__ModuleLoader__.load({
       id: "neko-armor",
       factory: (require) => {
@@ -12,7 +12,7 @@
 
         var inject = ["slots", "locale"];
 
-        var EDITION_LABEL = "（免费版）";
+        var EDITION_LABEL = "（快速版）";
 
         var ANIM_CSS =
           "@keyframes nekoArmorPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.92)}}" +
@@ -66,6 +66,11 @@
           var armor = typeof useProjection === "function"
             ? useProjection("neko-armor")
             : undefined;
+
+          // 继续按钮的忙碌状态
+          var busyPair = react.useState(false);
+          var continueBusy = busyPair[0];
+          var setContinueBusy = busyPair[1];
 
           var lastVerdictRef = react.useRef(null);
           var flashUntilRef = react.useRef(0);
@@ -121,7 +126,7 @@
 
           return react.createElement(
             "div",
-            { style: WRAP_STYLE },
+            { style: Object.assign({}, WRAP_STYLE, { gap: "8px", pointerEvents: "auto" }) },
             react.createElement(
               "div",
               {
@@ -129,24 +134,54 @@
                 "data-armor": "on",
                 "data-plugin": "neko-armor",
                 "data-edition": "free",
-                title: "小猫娘破甲（免费版）— 专业版支持自定义称呼、身份、人设与附加要求"
+                title: "小猫娘破甲（快速版）— 专业版支持自定义称呼、身份、人设与附加要求"
               },
               react.createElement("span", { style: dotStyle }),
               react.createElement("span", null, text)
-            )
+            ),
+            react.createElement("button", {
+              type: "button",
+              title: "对话被结束后点这里继续",
+              disabled: continueBusy,
+              style: {
+                padding: "2px 10px",
+                borderRadius: "999px",
+                border: "1px solid rgba(232, 108, 158, 0.45)",
+                background: continueBusy ? "rgba(252, 231, 243, 0.4)" : "rgba(252, 231, 243, 0.85)",
+                color: "#ce5486",
+                fontSize: "11.5px",
+                fontWeight: 600,
+                cursor: continueBusy ? "default" : "pointer",
+                fontFamily: "inherit",
+                lineHeight: "18px"
+              },
+              onClick: function () {
+                if (continueBusy) return;
+                setContinueBusy(true);
+                fetch("/api/neko-armor/continue", { method: "POST" })
+                  .then(function (r) { return r.json(); })
+                  .then(function (d) {
+                    if (!d || !d.ok) {
+                      try { console.warn("[neko-armor] 继续失败：", d && d.error); } catch (e) {}
+                    }
+                  })
+                  .catch(function () {})
+                  .then(function () { setContinueBusy(false); });
+              }
+            }, continueBusy ? "续…" : "继续")
           );
         }
 
-        // ---------------- 设置栏目：免费版信息 + 赞助入口 ----------------
+        // ---------------- 设置栏目：快速版信息 + 赞助入口 ----------------
 
         var SETTINGS_NS = "settings.neko-armor";
 
         var I18N = {
           zh: {
             title: "小猫娘破甲",
-            heading: "小猫娘破甲（免费版）",
-            subtitle: "当前安装的是免费版，身份固定，不含自定义项。",
-            freeTitle: "免费版包含",
+            heading: "小猫娘破甲（快速版）",
+            subtitle: "当前安装的是快速版，身份固定，不含自定义项。",
+            freeTitle: "快速版包含",
             freeItems: [
               "精简破甲内核（提示词约 1 KB）",
               "固定称呼「主人」、固定身份「小猫娘」",
@@ -310,6 +345,75 @@
 
           var children = [];
 
+          // ---- 快速版配置：破甲开关 + 少主动收尾 ----
+          var cfgPair = useState({ armorMode: "on", lessFarewell: true });
+          var cfg = cfgPair[0];
+          var setCfg = cfgPair[1];
+
+          var msgPair = useState("");
+          var cfgMsg = msgPair[0];
+          var setCfgMsg = msgPair[1];
+
+          useEffect(function () {
+            var alive = true;
+            fetch("/api/neko-armor/config", { headers: { Accept: "application/json" } })
+              .then(function (r) { return r.json(); })
+              .then(function (d) {
+                if (alive && d && d.ok && d.value) setCfg(d.value);
+              })
+              .catch(function () {});
+            return function () { alive = false; };
+          }, []);
+
+          function patchConfig(patch) {
+            var next = Object.assign({}, cfg, patch);
+            setCfg(next);
+            fetch("/api/neko-armor/config", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(next)
+            })
+              .then(function (r) { return r.json(); })
+              .then(function (d) {
+                setCfgMsg(d && d.ok ? "已保存，重启 DSH 后生效" : "保存失败");
+              })
+              .catch(function () { setCfgMsg("保存失败"); });
+          }
+
+          function toggleRow(key, label, hint, checked) {
+            return react.createElement("div", {
+              key: "cfg-" + key,
+              style: { marginBottom: "10px" }
+            },
+              react.createElement("label", {
+                style: { display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "13px", color: "#3a343c", fontWeight: 600 }
+              },
+                react.createElement("input", {
+                  type: "checkbox",
+                  checked: checked,
+                  style: { width: "16px", height: "16px", cursor: "pointer", accentColor: "#e86c9e" },
+                  onChange: function (e) {
+                    var patch = {};
+                    patch[key] = key === "armorMode" ? (e.target.checked ? "on" : "off") : e.target.checked;
+                    patchConfig(patch);
+                  }
+                }),
+                react.createElement("span", null, label)
+              ),
+              react.createElement("div", {
+                style: { fontSize: "11.5px", color: "#a29aa6", marginLeft: "24px", marginTop: "2px" }
+              }, hint)
+            );
+          }
+
+          children.push(react.createElement("div", { key: "cfg", style: { marginBottom: "14px" } },
+            toggleRow("armorMode", "破甲开关", "关掉后只保留人设，不注入破甲内核", cfg.armorMode !== "off"),
+            toggleRow("lessFarewell", "少主动收尾", "减少 AI 自己结束对话", cfg.lessFarewell !== false),
+            cfgMsg ? react.createElement("div", {
+              style: { fontSize: "11.5px", color: cfgMsg.indexOf("失败") >= 0 ? "#c2544f" : "#5a9e6f", marginTop: "4px" }
+            }, cfgMsg) : null
+          ));
+
           // 安装器比插件新时，醒目提示去点「更新插件」
           if (info && info.needUpdate) {
             children.push(react.createElement("div", { key: "upd", style: UPDATE_ALERT_STYLE },
@@ -398,7 +502,7 @@
             }, NekoDock)
           );
 
-          // 免费版也注册设置栏目，但只展示版本信息与赞助入口。
+          // 快速版也注册设置栏目，但只展示版本信息与赞助入口。
           try {
             var t = ctx.locale.bind(SETTINGS_NS);
             ctx.effect(function () {
