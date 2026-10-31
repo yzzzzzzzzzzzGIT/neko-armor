@@ -23,3 +23,9 @@ build-pro/
 
 # 发版临时文件
 rel_id.txt
+
+# 本地临时/备份文件
+*.bak-*
+backup-purge-merge-*/
+_tmp*
+.node-wt

@@ -2,7 +2,7 @@
 
 一个用于 DSH 的本地提示词注入插件。分**快速版**与**专业版（赞助）**，同一个安装器分发。
 
-作者：**Yz**　版本：`1.2.1`　插件标识：`neko-armor`
+作者：**Yz**　版本：`1.2.2`　插件标识：`neko-armor`
 
 ## 更新日志
 
@@ -110,12 +110,13 @@ DSH → 左下角头像 → **插件** → **添加插件** → 搜索 `neko-arm
 
 ### 方式二：安装程序（快速版 / 专业版）
 
-两个下载点，任选其一：
+**主用下载地址：[github.com/yzzzzzzzzzzzGIT/neko-armor](https://github.com/yzzzzzzzzzzzGIT/neko-armor)**
 
 | 来源 | 地址 | 说明 |
 | --- | --- | --- |
-| Gitee Releases | [v1.0.6](https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest) | 直接下 `小猫娘破甲.exe`，1145 KB |
-| 蓝奏云 | [wwbxj.lanzn.com/b00z21847c](https://wwbxj.lanzn.com/b00z21847c) | 密码 `yznb`，进文件夹下载 zip 后解压 |
+| **GitHub（主用）** | [yzzzzzzzzzzzGIT/neko-armor](https://github.com/yzzzzzzzzzzzGIT/neko-armor) | 源码与 Releases 都在这，优先用这个 |
+| Gitee Releases（备用） | [yzzzzzzzzg/neko-armor](https://gitee.com/yzzzzzzzzg/neko-armor/releases/latest) | 国内访问快，直接下 `小猫娘破甲.exe` |
+| 蓝奏云（备用） | [wwbxj.lanzn.com/b00z21847c](https://wwbxj.lanzn.com/b00z21847c) | 密码 `yznb`，进文件夹下载 zip 后解压 |
 
 下载后双击运行。
 
