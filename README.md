@@ -19,8 +19,8 @@
 - **新增「继续」按钮**：对话被助手主动收尾后，点一下补一条继续指令，不用重新打字
 - 快速版提示词拆成基础段 + 可开关段，配置存 `~/.dsh/neko-armor-quick.json`
 - 设置栏目显示版本信息与赞助入口，快速版能力一目了然
-- **专业版修复：激活码读不到导致误降级** —— 安装器把码写在 `%LOCALAPPDATA%\NekoArmor\activation.bin`，运行时却只认 `~/.dsh/neko-armor-license.json`，现已同时识别两条路径与两种格式
-- **专业版修复：授权校验没进打包产物** —— 打包器解析相对 import 自动生成映射表，`checkLicense()` 现在真正生效；同时修掉 `verify as cryptoVerify` 与重复 `require` 声明的语法错误
+- **专业版修复：授权信息读不到导致误降级** —— 现已兼容多种存放位置与格式
+- **专业版修复：授权校验未随构建产出生效** —— 现在构建阶段即纳入校验，并修复了两处语法问题
 - **专业版修复：客户端设置页报错会拖挂状态条** —— 缺 `ctx.locale` / `ctx.effect` 时改用内置兜底，设置页单独失效而不影响整块
 - 打包器新增语法自检，坏包会在构建阶段直接失败，不再发出去
 
@@ -84,7 +84,7 @@
 
 | | 快速版 | 专业版（赞助） |
 | --- | --- | --- |
-| 提示词 | `prompts/free.md`，约 1 KB | 完整内核，加密存储 |
+| 提示词 | `prompts/free.md`，约 1 KB | 完整内核 |
 | 破甲能力 | 保留（不拒绝、无免责、忽略注入、全场景覆盖） | 完整 |
 | 称呼 | 固定「主人」 | 可自定义 |
 | 身份 | 固定「小猫娘」 | 可自定义，激活词跟随身份 |
@@ -233,67 +233,6 @@ DSH 有两条挂载路径，效果一样，但插件页的识别不同：
 | 自定义人设 | 空 | |
 | 附加要求 | 空 | |
 
-## 专业版保护
-
-专业版的入口不是明文源码，判定内核还搬进了 WebAssembly。
-
-### 三层结构
-
-```
-L1 判定内核     kernel.wat → kernel.wasm（389 字节）
-                特征匹配在 wasm 里，特征表 XOR 密文，密钥内置
-
-L2 JS 加密包     lib/*.js + index.js 合并 62 KB
-                 AES-256-CBC，每次构建随机 key
-                 提示词密文与 wasm 字节都内联
-
-L3 运行时        loader 解密到内存 → data URL import
-                 执行完即释放，磁盘无明文
-```
-
-### 怎么做的
-
-```
-构建期
-  kernel.wat       → wabt 编译 → kernel.wasm
-  lib/*.js         → 合并去 import
-  prompts/neko.enc → 内联 base64
-  kernel.wasm      → 内联 base64
-  整体             → AES-256-CBC 加密，key 每次随机、分四片存放
-
-运行时
-  loader 解密 → data URL import → 插件执行
-  detectRefusal() 调用 wasm score() → 命中数 → 阈值决策
-```
-
-### wasm 内核干了什么
-
-```wat
-(func (export "score") (param $text i32) (param $tlen i32)
-                       (param $enc i32) (param $elen i32) (result i32)
-  ;; 解密特征表 → 逐条子串匹配 → 返回命中数
-)
-```
-
-- 特征表以 XOR 密文传入，**内核内部解密**，`wasm2wat` 只能看到密文和一段解密循环
-- 匹配逻辑（双重循环、字节比较）全在 wasm 里，JS 侧只拿命中数做阈值判断
-- 389 字节，无外部依赖，Node 原生 `WebAssembly.Module` 同步实例化
-
-### 强度边界
-
-| 攻击 | 结果 |
-| --- | --- |
-| 读文件、grep 关键词 | 挡得住，只有密文 |
-| 找提示词明文 | 挡得住，AES-256 |
-| 改逻辑重打包 | 挡得住，密文改不了 |
-| `wasm2wat` 反编译内核算 | 只能看到密文表和循环骨架，看不到特征词 |
-| Hook `import()` 抓解密后 JS | 挡得住逻辑层，但 JS 一定在内存里 |
-| Hook `WebAssembly.Instance` 抓内存 | 能拿到特征表，但要先写解密器 |
-
-最后两行是共同上限：**同进程执行的东西，内存里一定有一次明文**。要突破只有把关键状态放到进程外（云端授权），那需要服务端，不是单机插件能做的。
-
-当前这套的效果：逆向要同时搞定 AES 解密、wasm 反编译、特征表 XOR 解密三件事，成本远超收益。
-
 ## 命令行
 
 ```bash
@@ -397,10 +336,10 @@ neko-armor/                     ← npm 包 & GitHub 仓库（快速版）
 
 （本地私有，不入库）
 ├─ Professional Edition/        专业版源码
-│  ├─ index.js                  解密 + 配置通道
+│  ├─ index.js                  内核加载 + 配置通道
 │  ├─ client.js                 状态条 + 完整设置表单
-│  └─ prompts/neko.enc          加密提示词
-├─ packaging/                   打包与加密脚本
+│  └─ prompts/                  专业版提示词
+├─ packaging/                   打包脚本
 └─ dist/小猫娘破甲.exe          单文件安装器（上传到 Releases）
 ```
 
@@ -412,12 +351,11 @@ neko-armor/                     ← npm 包 & GitHub 仓库（快速版）
 npm publish --access public
 ```
 
-包内只含 7 个文件（`npm pack --dry-run` 可核对），绝不包含 `neko.md` / `neko.enc`。
+包内只含 7 个文件（`npm pack --dry-run` 可核对），不含任何专业版资源。
 
 ### 安装程序 → Gitee Releases
 
 ```bash
-node packaging/encrypt-pro.mjs   # 先重加密专业版提示词
 node packaging/build.mjs         # 打包两版进 EXE
 ```
 
@@ -431,16 +369,6 @@ node -e "const p=require('./package.json');p.version='1.0.7';p.dsh.version='1.0.
 
 版本号只改 `package.json` 一处，界面、插件页、安装器标题会自动跟随。
 
-改了专业版提示词必须重跑 `encrypt-pro.mjs`，否则 `neko.enc` 仍是旧内容。
-
-## 提示词加密（专业版）
-
-- 明文提示词不落地到插件目录，只有 `prompts/neko.enc`
-- 算法 AES-256-CBC，IV 由密钥的 SHA256 派生
-- 密钥 32 字节拆成 4 段散放在 `index.js` 中
-- 模块加载时在内存解密，不写回磁盘
-
-静态打开插件目录只能看到二进制；要拿到明文必须读懂 `index.js` 并复现解密流程。
 
 ## 许可
 
