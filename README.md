@@ -6,6 +6,8 @@
 
 分**快速版**（免费，开源）和**专业版**（赞助）。
 
+> English README: [README.en.md](README.en.md)
+
 ---
 
 ## 快速开始
